@@ -1,0 +1,518 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------------< jvms-compare:jvms-compare >----------------------
+[INFO] Building JVMs Compare 1.0.0
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ jvms-compare ---
+[INFO] Deleting /Users/cguntur/projects/conf/jvms-compare/target
+[INFO] 
+[INFO] --- maven-toolchains-plugin:1.1:toolchain (default) @ jvms-compare ---
+[INFO] Required toolchain: jdk [ vendor='AdoptOpenJDKHotspot' version='11' ]
+[INFO] Found matching toolchain for type jdk: JDK[/Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home/]
+[INFO] 
+[INFO] --- maven-dependency-plugin:3.1.1:build-classpath (build-classpath) @ jvms-compare ---
+[INFO] Dependencies classpath:
+/Users/cguntur/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/Users/cguntur/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.5.0/junit-jupiter-api-5.5.0.jar:/Users/cguntur/.m2/repository/org/eclipse/collections/eclipse-collections/10.0.0/eclipse-collections-10.0.0.jar:/Users/cguntur/.m2/repository/org/junit/platform/junit-platform-engine/1.5.0/junit-platform-engine-1.5.0.jar:/Users/cguntur/.m2/repository/org/junit/platform/junit-platform-commons/1.5.0/junit-platform-commons-1.5.0.jar:/Users/cguntur/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.5.0/junit-jupiter-params-5.5.0.jar:/Users/cguntur/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.5.0/junit-jupiter-engine-5.5.0.jar:/Users/cguntur/.m2/repository/org/openjdk/jmh/jmh-core/1.21/jmh-core-1.21.jar:/Users/cguntur/.m2/repository/org/junit/jupiter/junit-jupiter/5.5.0/junit-jupiter-5.5.0.jar:/Users/cguntur/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/cguntur/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/Users/cguntur/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar:/Users/cguntur/.m2/repository/org/eclipse/collections/eclipse-collections-api/10.0.0/eclipse-collections-api-10.0.0.jar
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ jvms-compare ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ jvms-compare ---
+[INFO] Toolchain in maven-compiler-plugin: JDK[/Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home/]
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 10 source files to /Users/cguntur/projects/conf/jvms-compare/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ jvms-compare ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ jvms-compare ---
+[INFO] Toolchain in maven-compiler-plugin: JDK[/Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home/]
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 2 source files to /Users/cguntur/projects/conf/jvms-compare/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ jvms-compare ---
+[INFO] Toolchain in surefire-plugin: JDK[/Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home/]
+[INFO] Surefire report directory: /Users/cguntur/projects/conf/jvms-compare/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running jvmscompare.PersonTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.516 sec
+Running jvmscompare.IntListTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.3 sec
+
+Results :
+
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- exec-maven-plugin:1.6.0:exec (combinedSummaryStats) @ jvms-compare ---
+[INFO] Toolchain in exec-maven-plugin: JDK[/Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home/]
+Java Runtime Environment version: 11.0.5
+Java Runtime Environment vendor: AdoptOpenJDK
+
+Java Runtime Name: OpenJDK Runtime Environment
+Java Runtime Version: 11.0.5+10
+
+Java Virtual Machine name: OpenJDK 64-Bit Server VM
+Java Virtual Machine vendor: AdoptOpenJDK
+Java Virtual Machine version: 11.0.5+10
+
+Java Class Version: 55.0
+
+Benchmark size: 100
+Benchmark forks: 2
+Benchmark warmups: 20
+Benchmark measurements: 10
+
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.openjdk.jmh.util.Utils (file:/Users/cguntur/.m2/repository/org/openjdk/jmh/jmh-core/1.21/jmh-core-1.21.jar) to field java.io.PrintStream.charOut
+WARNING: Please consider reporting this to the maintainers of org.openjdk.jmh.util.Utils
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+# JMH version: 1.21
+# VM version: JDK 11.0.5, OpenJDK 64-Bit Server VM, 11.0.5+10
+# VM invoker: /Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home/bin/java
+# VM options: <none>
+# Warmup: 20 iterations, 10 s each
+# Measurement: 10 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: jvmscompare.benchmark.PersonCombinedSummaryStats.combinedStatistics_EC_Eager_Serial
+
+# Run progress: 0.00% complete, ETA 00:50:00
+# Fork: 1 of 2
+# Warmup Iteration   1: 982802.116 ops/s
+# Warmup Iteration   2: 1027652.435 ops/s
+# Warmup Iteration   3: 1018163.274 ops/s
+# Warmup Iteration   4: 1015068.297 ops/s
+# Warmup Iteration   5: 1017913.446 ops/s
+# Warmup Iteration   6: 1021507.336 ops/s
+# Warmup Iteration   7: 1020861.148 ops/s
+# Warmup Iteration   8: 1020523.400 ops/s
+# Warmup Iteration   9: 1020555.673 ops/s
+# Warmup Iteration  10: 1021046.605 ops/s
+# Warmup Iteration  11: 1018840.878 ops/s
+# Warmup Iteration  12: 1020034.114 ops/s
+# Warmup Iteration  13: 1018694.084 ops/s
+# Warmup Iteration  14: 1020512.124 ops/s
+# Warmup Iteration  15: 1020019.807 ops/s
+# Warmup Iteration  16: 1020552.919 ops/s
+# Warmup Iteration  17: 1019947.326 ops/s
+# Warmup Iteration  18: 1020403.380 ops/s
+# Warmup Iteration  19: 1021109.074 ops/s
+# Warmup Iteration  20: 1020452.909 ops/s
+Iteration   1: 1020294.018 ops/s
+Iteration   2: 1013056.712 ops/s
+Iteration   3: 1020449.854 ops/s
+Iteration   4: 1021260.923 ops/s
+Iteration   5: 1021161.910 ops/s
+Iteration   6: 1020460.318 ops/s
+Iteration   7: 1019122.093 ops/s
+Iteration   8: 1020984.409 ops/s
+Iteration   9: 1020941.295 ops/s
+Iteration  10: 1021065.319 ops/s
+
+# Run progress: 10.00% complete, ETA 00:45:05
+# Fork: 2 of 2
+# Warmup Iteration   1: 530228.765 ops/s
+# Warmup Iteration   2: 543903.604 ops/s
+# Warmup Iteration   3: 567062.360 ops/s
+# Warmup Iteration   4: 567544.413 ops/s
+# Warmup Iteration   5: 567016.082 ops/s
+# Warmup Iteration   6: 567854.711 ops/s
+# Warmup Iteration   7: 567600.061 ops/s
+# Warmup Iteration   8: 567838.504 ops/s
+# Warmup Iteration   9: 567927.227 ops/s
+# Warmup Iteration  10: 568192.670 ops/s
+# Warmup Iteration  11: 567649.405 ops/s
+# Warmup Iteration  12: 567951.690 ops/s
+# Warmup Iteration  13: 567958.493 ops/s
+# Warmup Iteration  14: 567600.633 ops/s
+# Warmup Iteration  15: 567796.628 ops/s
+# Warmup Iteration  16: 567947.905 ops/s
+# Warmup Iteration  17: 568558.315 ops/s
+# Warmup Iteration  18: 568755.305 ops/s
+# Warmup Iteration  19: 568837.299 ops/s
+# Warmup Iteration  20: 568745.276 ops/s
+Iteration   1: 568527.767 ops/s
+Iteration   2: 568772.848 ops/s
+Iteration   3: 568310.337 ops/s
+Iteration   4: 568794.094 ops/s
+Iteration   5: 568917.550 ops/s
+Iteration   6: 565103.889 ops/s
+Iteration   7: 567674.692 ops/s
+Iteration   8: 568882.797 ops/s
+Iteration   9: 568331.909 ops/s
+Iteration  10: 568437.480 ops/s
+
+
+Result "jvmscompare.benchmark.PersonCombinedSummaryStats.combinedStatistics_EC_Eager_Serial":
+  794027.511 ±(99.9%) 201221.560 ops/s [Average]
+  (min, avg, max) = (565103.889, 794027.511, 1021260.923), stdev = 231727.048
+  CI (99.9%): [592805.950, 995249.071] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 11.0.5, OpenJDK 64-Bit Server VM, 11.0.5+10
+# VM invoker: /Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home/bin/java
+# VM options: <none>
+# Warmup: 20 iterations, 10 s each
+# Measurement: 10 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: jvmscompare.benchmark.PersonCombinedSummaryStats.combinedStatistics_EC_Lazy_Serial
+
+# Run progress: 20.00% complete, ETA 00:40:05
+# Fork: 1 of 2
+# Warmup Iteration   1: 363920.583 ops/s
+# Warmup Iteration   2: 398524.901 ops/s
+# Warmup Iteration   3: 401673.030 ops/s
+# Warmup Iteration   4: 401730.821 ops/s
+# Warmup Iteration   5: 401377.525 ops/s
+# Warmup Iteration   6: 401571.315 ops/s
+# Warmup Iteration   7: 401397.548 ops/s
+# Warmup Iteration   8: 400846.428 ops/s
+# Warmup Iteration   9: 401418.187 ops/s
+# Warmup Iteration  10: 401638.733 ops/s
+# Warmup Iteration  11: 400830.536 ops/s
+# Warmup Iteration  12: 401395.473 ops/s
+# Warmup Iteration  13: 401497.230 ops/s
+# Warmup Iteration  14: 400051.409 ops/s
+# Warmup Iteration  15: 401463.924 ops/s
+# Warmup Iteration  16: 401509.162 ops/s
+# Warmup Iteration  17: 400993.789 ops/s
+# Warmup Iteration  18: 401141.777 ops/s
+# Warmup Iteration  19: 401144.724 ops/s
+# Warmup Iteration  20: 401045.990 ops/s
+Iteration   1: 401018.250 ops/s
+Iteration   2: 401329.582 ops/s
+Iteration   3: 401051.558 ops/s
+Iteration   4: 401087.819 ops/s
+Iteration   5: 400924.236 ops/s
+Iteration   6: 401271.300 ops/s
+Iteration   7: 400788.163 ops/s
+Iteration   8: 401292.065 ops/s
+Iteration   9: 401003.775 ops/s
+Iteration  10: 401358.673 ops/s
+
+# Run progress: 30.00% complete, ETA 00:35:04
+# Fork: 2 of 2
+# Warmup Iteration   1: 363681.599 ops/s
+# Warmup Iteration   2: 398285.710 ops/s
+# Warmup Iteration   3: 402629.445 ops/s
+# Warmup Iteration   4: 403055.996 ops/s
+# Warmup Iteration   5: 402792.859 ops/s
+# Warmup Iteration   6: 402193.844 ops/s
+# Warmup Iteration   7: 402923.871 ops/s
+# Warmup Iteration   8: 402861.182 ops/s
+# Warmup Iteration   9: 402822.531 ops/s
+# Warmup Iteration  10: 403112.943 ops/s
+# Warmup Iteration  11: 402963.279 ops/s
+# Warmup Iteration  12: 403213.662 ops/s
+# Warmup Iteration  13: 402950.303 ops/s
+# Warmup Iteration  14: 402693.928 ops/s
+# Warmup Iteration  15: 402863.773 ops/s
+# Warmup Iteration  16: 402194.556 ops/s
+# Warmup Iteration  17: 402590.766 ops/s
+# Warmup Iteration  18: 402948.571 ops/s
+# Warmup Iteration  19: 402834.373 ops/s
+# Warmup Iteration  20: 402731.213 ops/s
+Iteration   1: 402835.119 ops/s
+Iteration   2: 402801.700 ops/s
+Iteration   3: 402672.330 ops/s
+Iteration   4: 402758.037 ops/s
+Iteration   5: 402646.277 ops/s
+Iteration   6: 400309.183 ops/s
+Iteration   7: 402187.113 ops/s
+Iteration   8: 402683.099 ops/s
+Iteration   9: 402745.651 ops/s
+Iteration  10: 402769.814 ops/s
+
+
+Result "jvmscompare.benchmark.PersonCombinedSummaryStats.combinedStatistics_EC_Lazy_Serial":
+  401776.687 ±(99.9%) 758.661 ops/s [Average]
+  (min, avg, max) = (400309.183, 401776.687, 402835.119), stdev = 873.676
+  CI (99.9%): [401018.026, 402535.349] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 11.0.5, OpenJDK 64-Bit Server VM, 11.0.5+10
+# VM invoker: /Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home/bin/java
+# VM options: <none>
+# Warmup: 20 iterations, 10 s each
+# Measurement: 10 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: jvmscompare.benchmark.PersonCombinedSummaryStats.combinedStatistics_EC_Stream_Parallel
+
+# Run progress: 40.00% complete, ETA 00:30:03
+# Fork: 1 of 2
+# Warmup Iteration   1: 18605.090 ops/s
+# Warmup Iteration   2: 17384.654 ops/s
+# Warmup Iteration   3: 17784.241 ops/s
+# Warmup Iteration   4: 17789.494 ops/s
+# Warmup Iteration   5: 17690.644 ops/s
+# Warmup Iteration   6: 17741.622 ops/s
+# Warmup Iteration   7: 17798.476 ops/s
+# Warmup Iteration   8: 17909.009 ops/s
+# Warmup Iteration   9: 18010.350 ops/s
+# Warmup Iteration  10: 17763.518 ops/s
+# Warmup Iteration  11: 18065.483 ops/s
+# Warmup Iteration  12: 17770.296 ops/s
+# Warmup Iteration  13: 17737.357 ops/s
+# Warmup Iteration  14: 17776.099 ops/s
+# Warmup Iteration  15: 18489.482 ops/s
+# Warmup Iteration  16: 18000.956 ops/s
+# Warmup Iteration  17: 17646.418 ops/s
+# Warmup Iteration  18: 17591.862 ops/s
+# Warmup Iteration  19: 17755.926 ops/s
+# Warmup Iteration  20: 17778.096 ops/s
+Iteration   1: 17852.490 ops/s
+Iteration   2: 17966.465 ops/s
+Iteration   3: 17771.027 ops/s
+Iteration   4: 17728.258 ops/s
+Iteration   5: 17808.127 ops/s
+Iteration   6: 17776.146 ops/s
+Iteration   7: 17674.692 ops/s
+Iteration   8: 17752.976 ops/s
+Iteration   9: 17803.296 ops/s
+Iteration  10: 17702.100 ops/s
+
+# Run progress: 50.00% complete, ETA 00:25:03
+# Fork: 2 of 2
+# Warmup Iteration   1: 19805.538 ops/s
+# Warmup Iteration   2: 21025.218 ops/s
+# Warmup Iteration   3: 18215.505 ops/s
+# Warmup Iteration   4: 18235.064 ops/s
+# Warmup Iteration   5: 18265.275 ops/s
+# Warmup Iteration   6: 18222.353 ops/s
+# Warmup Iteration   7: 18234.341 ops/s
+# Warmup Iteration   8: 18295.739 ops/s
+# Warmup Iteration   9: 18265.192 ops/s
+# Warmup Iteration  10: 18246.666 ops/s
+# Warmup Iteration  11: 18414.461 ops/s
+# Warmup Iteration  12: 18290.038 ops/s
+# Warmup Iteration  13: 18516.758 ops/s
+# Warmup Iteration  14: 18241.963 ops/s
+# Warmup Iteration  15: 18251.838 ops/s
+# Warmup Iteration  16: 18281.676 ops/s
+# Warmup Iteration  17: 18479.997 ops/s
+# Warmup Iteration  18: 18332.139 ops/s
+# Warmup Iteration  19: 18187.854 ops/s
+# Warmup Iteration  20: 18532.505 ops/s
+Iteration   1: 18548.192 ops/s
+Iteration   2: 18340.671 ops/s
+Iteration   3: 18311.160 ops/s
+Iteration   4: 18329.602 ops/s
+Iteration   5: 18374.858 ops/s
+Iteration   6: 19265.423 ops/s
+Iteration   7: 18492.788 ops/s
+Iteration   8: 18181.833 ops/s
+Iteration   9: 18269.085 ops/s
+Iteration  10: 18337.048 ops/s
+
+
+Result "jvmscompare.benchmark.PersonCombinedSummaryStats.combinedStatistics_EC_Stream_Parallel":
+  18114.312 ±(99.9%) 350.458 ops/s [Average]
+  (min, avg, max) = (17674.692, 18114.312, 19265.423), stdev = 403.588
+  CI (99.9%): [17763.854, 18464.770] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 11.0.5, OpenJDK 64-Bit Server VM, 11.0.5+10
+# VM invoker: /Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home/bin/java
+# VM options: <none>
+# Warmup: 20 iterations, 10 s each
+# Measurement: 10 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: jvmscompare.benchmark.PersonCombinedSummaryStats.combinedStatistics_JDK_Stream_Parallel
+
+# Run progress: 60.00% complete, ETA 00:20:02
+# Fork: 1 of 2
+# Warmup Iteration   1: 17213.410 ops/s
+# Warmup Iteration   2: 15370.062 ops/s
+# Warmup Iteration   3: 15706.754 ops/s
+# Warmup Iteration   4: 15724.086 ops/s
+# Warmup Iteration   5: 15720.799 ops/s
+# Warmup Iteration   6: 15721.275 ops/s
+# Warmup Iteration   7: 15709.952 ops/s
+# Warmup Iteration   8: 15736.164 ops/s
+# Warmup Iteration   9: 15724.085 ops/s
+# Warmup Iteration  10: 15697.792 ops/s
+# Warmup Iteration  11: 16734.293 ops/s
+# Warmup Iteration  12: 19410.509 ops/s
+# Warmup Iteration  13: 16032.597 ops/s
+# Warmup Iteration  14: 15709.414 ops/s
+# Warmup Iteration  15: 15709.590 ops/s
+# Warmup Iteration  16: 16102.879 ops/s
+# Warmup Iteration  17: 15725.134 ops/s
+# Warmup Iteration  18: 15668.551 ops/s
+# Warmup Iteration  19: 15674.975 ops/s
+# Warmup Iteration  20: 15637.303 ops/s
+Iteration   1: 15686.022 ops/s
+Iteration   2: 16181.316 ops/s
+Iteration   3: 15695.688 ops/s
+Iteration   4: 15665.506 ops/s
+Iteration   5: 15674.657 ops/s
+Iteration   6: 15574.151 ops/s
+Iteration   7: 15826.657 ops/s
+Iteration   8: 15680.892 ops/s
+Iteration   9: 17061.508 ops/s
+Iteration  10: 16135.562 ops/s
+
+# Run progress: 70.00% complete, ETA 00:15:01
+# Fork: 2 of 2
+# Warmup Iteration   1: 17824.614 ops/s
+# Warmup Iteration   2: 16155.630 ops/s
+# Warmup Iteration   3: 16195.855 ops/s
+# Warmup Iteration   4: 16202.484 ops/s
+# Warmup Iteration   5: 16167.030 ops/s
+# Warmup Iteration   6: 16277.447 ops/s
+# Warmup Iteration   7: 16441.850 ops/s
+# Warmup Iteration   8: 16188.933 ops/s
+# Warmup Iteration   9: 16183.511 ops/s
+# Warmup Iteration  10: 16191.239 ops/s
+# Warmup Iteration  11: 16157.864 ops/s
+# Warmup Iteration  12: 16416.869 ops/s
+# Warmup Iteration  13: 16202.782 ops/s
+# Warmup Iteration  14: 16434.097 ops/s
+# Warmup Iteration  15: 16149.726 ops/s
+# Warmup Iteration  16: 16066.946 ops/s
+# Warmup Iteration  17: 16241.513 ops/s
+# Warmup Iteration  18: 16253.309 ops/s
+# Warmup Iteration  19: 16223.209 ops/s
+# Warmup Iteration  20: 16482.208 ops/s
+Iteration   1: 16593.974 ops/s
+Iteration   2: 16539.063 ops/s
+Iteration   3: 16515.503 ops/s
+Iteration   4: 16232.639 ops/s
+Iteration   5: 16225.942 ops/s
+Iteration   6: 16821.181 ops/s
+Iteration   7: 16446.006 ops/s
+Iteration   8: 16260.761 ops/s
+Iteration   9: 16519.596 ops/s
+Iteration  10: 16219.625 ops/s
+
+
+Result "jvmscompare.benchmark.PersonCombinedSummaryStats.combinedStatistics_JDK_Stream_Parallel":
+  16177.812 ±(99.9%) 374.906 ops/s [Average]
+  (min, avg, max) = (15574.151, 16177.812, 17061.508), stdev = 431.743
+  CI (99.9%): [15802.906, 16552.719] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 11.0.5, OpenJDK 64-Bit Server VM, 11.0.5+10
+# VM invoker: /Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home/bin/java
+# VM options: <none>
+# Warmup: 20 iterations, 10 s each
+# Measurement: 10 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: jvmscompare.benchmark.PersonCombinedSummaryStats.combinedStatistics_JDK_Stream_Serial
+
+# Run progress: 80.00% complete, ETA 00:10:01
+# Fork: 1 of 2
+# Warmup Iteration   1: 693134.920 ops/s
+# Warmup Iteration   2: 736592.982 ops/s
+# Warmup Iteration   3: 742466.709 ops/s
+# Warmup Iteration   4: 743302.047 ops/s
+# Warmup Iteration   5: 742483.423 ops/s
+# Warmup Iteration   6: 743434.154 ops/s
+# Warmup Iteration   7: 743511.785 ops/s
+# Warmup Iteration   8: 742894.354 ops/s
+# Warmup Iteration   9: 743413.290 ops/s
+# Warmup Iteration  10: 743270.742 ops/s
+# Warmup Iteration  11: 741550.293 ops/s
+# Warmup Iteration  12: 743415.537 ops/s
+# Warmup Iteration  13: 743322.142 ops/s
+# Warmup Iteration  14: 740904.289 ops/s
+# Warmup Iteration  15: 743277.602 ops/s
+# Warmup Iteration  16: 743133.977 ops/s
+# Warmup Iteration  17: 734270.218 ops/s
+# Warmup Iteration  18: 742779.802 ops/s
+# Warmup Iteration  19: 740456.664 ops/s
+# Warmup Iteration  20: 697918.949 ops/s
+Iteration   1: 723167.891 ops/s
+Iteration   2: 720760.808 ops/s
+Iteration   3: 724580.472 ops/s
+Iteration   4: 672249.375 ops/s
+Iteration   5: 739507.046 ops/s
+Iteration   6: 741363.827 ops/s
+Iteration   7: 741816.742 ops/s
+Iteration   8: 742982.714 ops/s
+Iteration   9: 740459.381 ops/s
+Iteration  10: 742773.770 ops/s
+
+# Run progress: 90.00% complete, ETA 00:05:00
+# Fork: 2 of 2
+# Warmup Iteration   1: 717294.932 ops/s
+# Warmup Iteration   2: 761172.690 ops/s
+# Warmup Iteration   3: 766196.247 ops/s
+# Warmup Iteration   4: 765661.570 ops/s
+# Warmup Iteration   5: 766074.979 ops/s
+# Warmup Iteration   6: 766020.184 ops/s
+# Warmup Iteration   7: 765945.816 ops/s
+# Warmup Iteration   8: 764095.982 ops/s
+# Warmup Iteration   9: 766128.812 ops/s
+# Warmup Iteration  10: 766144.254 ops/s
+# Warmup Iteration  11: 765900.966 ops/s
+# Warmup Iteration  12: 765661.734 ops/s
+# Warmup Iteration  13: 766145.424 ops/s
+# Warmup Iteration  14: 765760.073 ops/s
+# Warmup Iteration  15: 766173.796 ops/s
+# Warmup Iteration  16: 765975.021 ops/s
+# Warmup Iteration  17: 762002.032 ops/s
+# Warmup Iteration  18: 762298.254 ops/s
+# Warmup Iteration  19: 762323.932 ops/s
+# Warmup Iteration  20: 760618.373 ops/s
+Iteration   1: 762479.884 ops/s
+Iteration   2: 762251.237 ops/s
+Iteration   3: 762033.160 ops/s
+Iteration   4: 762505.786 ops/s
+Iteration   5: 761596.373 ops/s
+Iteration   6: 757536.342 ops/s
+Iteration   7: 761136.748 ops/s
+Iteration   8: 762415.007 ops/s
+Iteration   9: 761276.056 ops/s
+Iteration  10: 762733.131 ops/s
+
+
+Result "jvmscompare.benchmark.PersonCombinedSummaryStats.combinedStatistics_JDK_Stream_Serial":
+  745281.288 ±(99.9%) 19550.203 ops/s [Average]
+  (min, avg, max) = (672249.375, 745281.288, 762733.131), stdev = 22514.043
+  CI (99.9%): [725731.084, 764831.491] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:50:05
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+Benchmark                                                           Mode  Cnt       Score        Error  Units
+PersonCombinedSummaryStats.combinedStatistics_EC_Eager_Serial      thrpt   20  794027.511 ± 201221.560  ops/s
+PersonCombinedSummaryStats.combinedStatistics_EC_Lazy_Serial       thrpt   20  401776.687 ±    758.661  ops/s
+PersonCombinedSummaryStats.combinedStatistics_EC_Stream_Parallel   thrpt   20   18114.312 ±    350.458  ops/s
+PersonCombinedSummaryStats.combinedStatistics_JDK_Stream_Parallel  thrpt   20   16177.812 ±    374.906  ops/s
+PersonCombinedSummaryStats.combinedStatistics_JDK_Stream_Serial    thrpt   20  745281.288 ±  19550.203  ops/s
+
+Benchmark result is saved to benchmark-results/person-combined-summary-stats/04_AdoptOpenJDKHotspotPersonCombinedSummaryStats.csv
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  50:18 min
+[INFO] Finished at: 2020-01-19T21:22:36-05:00
+[INFO] ------------------------------------------------------------------------
