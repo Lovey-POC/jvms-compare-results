@@ -1,0 +1,621 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------------< jvms-compare:jvms-compare >----------------------
+[INFO] Building JVMs Compare 1.0.0
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ jvms-compare ---
+[INFO] Deleting /Users/cguntur/projects/conf/jvms-compare/target
+[INFO] 
+[INFO] --- maven-toolchains-plugin:1.1:toolchain (default) @ jvms-compare ---
+[INFO] Required toolchain: jdk [ vendor='AdoptOpenJDKOpenJ9' version='11' ]
+[INFO] Found matching toolchain for type jdk: JDK[/Library/Java/JavaVirtualMachines/adoptopenjdk-11-openj9.jdk/Contents/Home/]
+[INFO] 
+[INFO] --- maven-dependency-plugin:3.1.1:build-classpath (build-classpath) @ jvms-compare ---
+[INFO] Dependencies classpath:
+/Users/cguntur/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/Users/cguntur/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.5.0/junit-jupiter-api-5.5.0.jar:/Users/cguntur/.m2/repository/org/eclipse/collections/eclipse-collections/10.0.0/eclipse-collections-10.0.0.jar:/Users/cguntur/.m2/repository/org/junit/platform/junit-platform-engine/1.5.0/junit-platform-engine-1.5.0.jar:/Users/cguntur/.m2/repository/org/junit/platform/junit-platform-commons/1.5.0/junit-platform-commons-1.5.0.jar:/Users/cguntur/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.5.0/junit-jupiter-params-5.5.0.jar:/Users/cguntur/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.5.0/junit-jupiter-engine-5.5.0.jar:/Users/cguntur/.m2/repository/org/junit/jupiter/junit-jupiter/5.5.0/junit-jupiter-5.5.0.jar:/Users/cguntur/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/cguntur/.m2/repository/org/openjdk/jmh/jmh-core/1.23/jmh-core-1.23.jar:/Users/cguntur/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/Users/cguntur/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar:/Users/cguntur/.m2/repository/org/eclipse/collections/eclipse-collections-api/10.0.0/eclipse-collections-api-10.0.0.jar
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ jvms-compare ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ jvms-compare ---
+[INFO] Toolchain in maven-compiler-plugin: JDK[/Library/Java/JavaVirtualMachines/adoptopenjdk-11-openj9.jdk/Contents/Home/]
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 10 source files to /Users/cguntur/projects/conf/jvms-compare/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ jvms-compare ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ jvms-compare ---
+[INFO] Toolchain in maven-compiler-plugin: JDK[/Library/Java/JavaVirtualMachines/adoptopenjdk-11-openj9.jdk/Contents/Home/]
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 2 source files to /Users/cguntur/projects/conf/jvms-compare/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ jvms-compare ---
+[INFO] Toolchain in surefire-plugin: JDK[/Library/Java/JavaVirtualMachines/adoptopenjdk-11-openj9.jdk/Contents/Home/]
+[INFO] Surefire report directory: /Users/cguntur/projects/conf/jvms-compare/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running jvmscompare.PersonTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.534 sec
+Running jvmscompare.IntListTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.678 sec
+
+Results :
+
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- exec-maven-plugin:1.6.0:exec (sum) @ jvms-compare ---
+[INFO] Toolchain in exec-maven-plugin: JDK[/Library/Java/JavaVirtualMachines/adoptopenjdk-11-openj9.jdk/Contents/Home/]
+Java Runtime Environment version: 11.0.6
+Java Runtime Environment vendor: Eclipse OpenJ9
+
+Java Runtime Name: OpenJDK Runtime Environment
+Java Runtime Version: 11.0.6+10
+
+Java Virtual Machine name: anonymous
+Java Virtual Machine vendor: Eclipse OpenJ9
+Java Virtual Machine version: openj9-0.18.1
+
+Java Class Version: 55.0
+
+Benchmark size: 1000
+Benchmark forks: 2
+Benchmark warmups: 20
+Benchmark measurements: 10
+
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.openjdk.jmh.util.Utils (file:/Users/cguntur/.m2/repository/org/openjdk/jmh/jmh-core/1.23/jmh-core-1.23.jar) to field java.io.PrintStream.charOut
+WARNING: Please consider reporting this to the maintainers of org.openjdk.jmh.util.Utils
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+# JMH version: 1.23
+# VM version: JDK 11.0.6, anonymous, openj9-0.18.1
+# *** WARNING: This VM is not supported by JMH. The produced benchmark data can be completely wrong.
+# VM invoker: /Library/Java/JavaVirtualMachines/adoptopenjdk-11-openj9.jdk/Contents/Home/bin/java
+# VM options: -Xoptionsfile=/Library/Java/JavaVirtualMachines/adoptopenjdk-11-openj9.jdk/Contents/Home/lib/options.default -Xlockword:mode=default,noLockword=java/lang/String,noLockword=java/util/MapEntry,noLockword=java/util/HashMap$Entry,noLockword=org/apache/harmony/luni/util/ModifiedMap$Entry,noLockword=java/util/Hashtable$Entry,noLockword=java/lang/invoke/MethodType,noLockword=java/lang/invoke/MethodHandle,noLockword=java/lang/invoke/CollectHandle,noLockword=java/lang/invoke/ConstructorHandle,noLockword=java/lang/invoke/ConvertHandle,noLockword=java/lang/invoke/ArgumentConversionHandle,noLockword=java/lang/invoke/AsTypeHandle,noLockword=java/lang/invoke/ExplicitCastHandle,noLockword=java/lang/invoke/FilterReturnHandle,noLockword=java/lang/invoke/DirectHandle,noLockword=java/lang/invoke/ReceiverBoundHandle,noLockword=java/lang/invoke/DynamicInvokerHandle,noLockword=java/lang/invoke/FieldHandle,noLockword=java/lang/invoke/FieldGetterHandle,noLockword=java/lang/invoke/FieldSetterHandle,noLockword=java/lang/invoke/StaticFieldGetterHandle,noLockword=java/lang/invoke/StaticFieldSetterHandle,noLockword=java/lang/invoke/IndirectHandle,noLockword=java/lang/invoke/InterfaceHandle,noLockword=java/lang/invoke/VirtualHandle,noLockword=java/lang/invoke/PrimitiveHandle,noLockword=java/lang/invoke/InvokeExactHandle,noLockword=java/lang/invoke/InvokeGenericHandle,noLockword=java/lang/invoke/VarargsCollectorHandle,noLockword=java/lang/invoke/ThunkTuple -Xjcl:jclse29 -Dcom.ibm.oti.vm.bootstrap.library.path=/Library/Java/JavaVirtualMachines/adoptopenjdk-11-openj9.jdk/Contents/Home/lib/compressedrefs:/Library/Java/JavaVirtualMachines/adoptopenjdk-11-openj9.jdk/Contents/Home/lib -Dsun.boot.library.path=/Library/Java/JavaVirtualMachines/adoptopenjdk-11-openj9.jdk/Contents/Home/lib/compressedrefs:/Library/Java/JavaVirtualMachines/adoptopenjdk-11-openj9.jdk/Contents/Home/lib -Djava.library.path=/Library/Java/JavaVirtualMachines/adoptopenjdk-11-openj9.jdk/Contents/Home/lib/compressedrefs:/Library/Java/JavaVirtualMachines/adoptopenjdk-11-openj9.jdk/Contents/Home/lib:/usr/lib -Djava.home=/Library/Java/JavaVirtualMachines/adoptopenjdk-11-openj9.jdk/Contents/Home -Duser.dir=/Users/cguntur/projects/conf/jvms-compare -Djava.class.path=/Users/cguntur/projects/conf/jvms-compare/target/classes:/Users/cguntur/.m2/repository/org/eclipse/collections/eclipse-collections-api/10.0.0/eclipse-collections-api-10.0.0.jar:/Users/cguntur/.m2/repository/org/eclipse/collections/eclipse-collections/10.0.0/eclipse-collections-10.0.0.jar:/Users/cguntur/.m2/repository/org/openjdk/jmh/jmh-core/1.23/jmh-core-1.23.jar:/Users/cguntur/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar:/Users/cguntur/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/Users/cguntur/.m2/repository/org/junit/jupiter/junit-jupiter/5.5.0/junit-jupiter-5.5.0.jar:/Users/cguntur/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.5.0/junit-jupiter-api-5.5.0.jar:/Users/cguntur/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/Users/cguntur/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/cguntur/.m2/repository/org/junit/platform/junit-platform-commons/1.5.0/junit-platform-commons-1.5.0.jar:/Users/cguntur/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.5.0/junit-jupiter-params-5.5.0.jar:/Users/cguntur/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.5.0/junit-jupiter-engine-5.5.0.jar:/Users/cguntur/.m2/repository/org/junit/platform/junit-platform-engine/1.5.0/junit-platform-engine-1.5.0.jar -Dsun.java.command=jvmscompare.benchmark.IntListSum 05_AdoptOpenJDKOpenJ9IntListSum -Dsun.java.launcher=SUN_STANDARD
+# Warmup: 20 iterations, 10 s each
+# Measurement: 10 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: jvmscompare.benchmark.IntListSum.sum_EC_Boxed_Eager_Serial
+
+WARNING: Not a HotSpot compiler command compatible VM ("anonymous-11.0.6"), compilerHints are disabled.
+# Run progress: 0.00% complete, ETA 01:00:00
+# Fork: 1 of 2
+# Warmup Iteration   1: 361843.788 ops/s
+# Warmup Iteration   2: 380518.142 ops/s
+# Warmup Iteration   3: 381894.082 ops/s
+# Warmup Iteration   4: 378827.298 ops/s
+# Warmup Iteration   5: 379645.220 ops/s
+# Warmup Iteration   6: 383469.625 ops/s
+# Warmup Iteration   7: 383971.185 ops/s
+# Warmup Iteration   8: 383913.951 ops/s
+# Warmup Iteration   9: 384051.375 ops/s
+# Warmup Iteration  10: 383854.074 ops/s
+# Warmup Iteration  11: 383725.562 ops/s
+# Warmup Iteration  12: 383856.162 ops/s
+# Warmup Iteration  13: 383785.013 ops/s
+# Warmup Iteration  14: 383861.579 ops/s
+# Warmup Iteration  15: 383731.845 ops/s
+# Warmup Iteration  16: 383475.864 ops/s
+# Warmup Iteration  17: 383279.103 ops/s
+# Warmup Iteration  18: 383978.511 ops/s
+# Warmup Iteration  19: 383839.078 ops/s
+# Warmup Iteration  20: 382466.354 ops/s
+Iteration   1: 383730.956 ops/s
+Iteration   2: 383926.165 ops/s
+Iteration   3: 383861.293 ops/s
+Iteration   4: 383936.758 ops/s
+Iteration   5: 383866.920 ops/s
+Iteration   6: 383878.266 ops/s
+Iteration   7: 383690.079 ops/s
+Iteration   8: 384005.899 ops/s
+Iteration   9: 383804.673 ops/s
+Iteration  10: 384052.336 ops/s
+
+WARNING: Not a HotSpot compiler command compatible VM ("anonymous-11.0.6"), compilerHints are disabled.
+# Run progress: 8.33% complete, ETA 00:55:10
+# Fork: 2 of 2
+# Warmup Iteration   1: 357030.081 ops/s
+# Warmup Iteration   2: 383094.788 ops/s
+# Warmup Iteration   3: 383757.993 ops/s
+# Warmup Iteration   4: 383807.761 ops/s
+# Warmup Iteration   5: 383279.190 ops/s
+# Warmup Iteration   6: 384174.053 ops/s
+# Warmup Iteration   7: 383799.563 ops/s
+# Warmup Iteration   8: 384072.031 ops/s
+# Warmup Iteration   9: 384140.606 ops/s
+# Warmup Iteration  10: 384201.315 ops/s
+# Warmup Iteration  11: 383827.121 ops/s
+# Warmup Iteration  12: 384157.757 ops/s
+# Warmup Iteration  13: 383913.998 ops/s
+# Warmup Iteration  14: 367832.845 ops/s
+# Warmup Iteration  15: 382559.245 ops/s
+# Warmup Iteration  16: 382663.418 ops/s
+# Warmup Iteration  17: 382223.339 ops/s
+# Warmup Iteration  18: 380737.742 ops/s
+# Warmup Iteration  19: 383648.815 ops/s
+# Warmup Iteration  20: 383566.593 ops/s
+Iteration   1: 382115.006 ops/s
+Iteration   2: 381473.077 ops/s
+Iteration   3: 382899.009 ops/s
+Iteration   4: 383890.764 ops/s
+Iteration   5: 383663.409 ops/s
+Iteration   6: 383816.315 ops/s
+Iteration   7: 383751.061 ops/s
+Iteration   8: 379092.832 ops/s
+Iteration   9: 383394.283 ops/s
+Iteration  10: 384076.321 ops/s
+
+
+Result "jvmscompare.benchmark.IntListSum.sum_EC_Boxed_Eager_Serial":
+  383346.271 ±(99.9%) 1045.602 ops/s [Average]
+  (min, avg, max) = (379092.832, 383346.271, 384076.321), stdev = 1204.116
+  CI (99.9%): [382300.670, 384391.873] (assumes normal distribution)
+
+
+# JMH version: 1.23
+# VM version: JDK 11.0.6, anonymous, openj9-0.18.1
+# *** WARNING: This VM is not supported by JMH. The produced benchmark data can be completely wrong.
+# VM invoker: /Library/Java/JavaVirtualMachines/adoptopenjdk-11-openj9.jdk/Contents/Home/bin/java
+WARNING: Not a HotSpot compiler command compatible VM ("anonymous-11.0.6"), compilerHints are disabled.
+# VM options: -Xoptionsfile=/Library/Java/JavaVirtualMachines/adoptopenjdk-11-openj9.jdk/Contents/Home/lib/options.default -Xlockword:mode=default,noLockword=java/lang/String,noLockword=java/util/MapEntry,noLockword=java/util/HashMap$Entry,noLockword=org/apache/harmony/luni/util/ModifiedMap$Entry,noLockword=java/util/Hashtable$Entry,noLockword=java/lang/invoke/MethodType,noLockword=java/lang/invoke/MethodHandle,noLockword=java/lang/invoke/CollectHandle,noLockword=java/lang/invoke/ConstructorHandle,noLockword=java/lang/invoke/ConvertHandle,noLockword=java/lang/invoke/ArgumentConversionHandle,noLockword=java/lang/invoke/AsTypeHandle,noLockword=java/lang/invoke/ExplicitCastHandle,noLockword=java/lang/invoke/FilterReturnHandle,noLockword=java/lang/invoke/DirectHandle,noLockword=java/lang/invoke/ReceiverBoundHandle,noLockword=java/lang/invoke/DynamicInvokerHandle,noLockword=java/lang/invoke/FieldHandle,noLockword=java/lang/invoke/FieldGetterHandle,noLockword=java/lang/invoke/FieldSetterHandle,noLockword=java/lang/invoke/StaticFieldGetterHandle,noLockword=java/lang/invoke/StaticFieldSetterHandle,noLockword=java/lang/invoke/IndirectHandle,noLockword=java/lang/invoke/InterfaceHandle,noLockword=java/lang/invoke/VirtualHandle,noLockword=java/lang/invoke/PrimitiveHandle,noLockword=java/lang/invoke/InvokeExactHandle,noLockword=java/lang/invoke/InvokeGenericHandle,noLockword=java/lang/invoke/VarargsCollectorHandle,noLockword=java/lang/invoke/ThunkTuple -Xjcl:jclse29 -Dcom.ibm.oti.vm.bootstrap.library.path=/Library/Java/JavaVirtualMachines/adoptopenjdk-11-openj9.jdk/Contents/Home/lib/compressedrefs:/Library/Java/JavaVirtualMachines/adoptopenjdk-11-openj9.jdk/Contents/Home/lib -Dsun.boot.library.path=/Library/Java/JavaVirtualMachines/adoptopenjdk-11-openj9.jdk/Contents/Home/lib/compressedrefs:/Library/Java/JavaVirtualMachines/adoptopenjdk-11-openj9.jdk/Contents/Home/lib -Djava.library.path=/Library/Java/JavaVirtualMachines/adoptopenjdk-11-openj9.jdk/Contents/Home/lib/compressedrefs:/Library/Java/JavaVirtualMachines/adoptopenjdk-11-openj9.jdk/Contents/Home/lib:/usr/lib -Djava.home=/Library/Java/JavaVirtualMachines/adoptopenjdk-11-openj9.jdk/Contents/Home -Duser.dir=/Users/cguntur/projects/conf/jvms-compare -Djava.class.path=/Users/cguntur/projects/conf/jvms-compare/target/classes:/Users/cguntur/.m2/repository/org/eclipse/collections/eclipse-collections-api/10.0.0/eclipse-collections-api-10.0.0.jar:/Users/cguntur/.m2/repository/org/eclipse/collections/eclipse-collections/10.0.0/eclipse-collections-10.0.0.jar:/Users/cguntur/.m2/repository/org/openjdk/jmh/jmh-core/1.23/jmh-core-1.23.jar:/Users/cguntur/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar:/Users/cguntur/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/Users/cguntur/.m2/repository/org/junit/jupiter/junit-jupiter/5.5.0/junit-jupiter-5.5.0.jar:/Users/cguntur/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.5.0/junit-jupiter-api-5.5.0.jar:/Users/cguntur/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/Users/cguntur/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/cguntur/.m2/repository/org/junit/platform/junit-platform-commons/1.5.0/junit-platform-commons-1.5.0.jar:/Users/cguntur/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.5.0/junit-jupiter-params-5.5.0.jar:/Users/cguntur/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.5.0/junit-jupiter-engine-5.5.0.jar:/Users/cguntur/.m2/repository/org/junit/platform/junit-platform-engine/1.5.0/junit-platform-engine-1.5.0.jar -Dsun.java.command=jvmscompare.benchmark.IntListSum 05_AdoptOpenJDKOpenJ9IntListSum -Dsun.java.launcher=SUN_STANDARD
+# Warmup: 20 iterations, 10 s each
+# Measurement: 10 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: jvmscompare.benchmark.IntListSum.sum_EC_Boxed_Lazy_Parallel
+
+# Run progress: 16.67% complete, ETA 00:50:08
+# Fork: 1 of 2
+# Warmup Iteration   1: 72316.637 ops/s
+# Warmup Iteration   2: 80697.945 ops/s
+# Warmup Iteration   3: 82300.963 ops/s
+# Warmup Iteration   4: 70929.719 ops/s
+# Warmup Iteration   5: 64324.487 ops/s
+# Warmup Iteration   6: 65858.104 ops/s
+# Warmup Iteration   7: 65475.562 ops/s
+# Warmup Iteration   8: 64518.882 ops/s
+# Warmup Iteration   9: 64800.207 ops/s
+# Warmup Iteration  10: 62424.681 ops/s
+# Warmup Iteration  11: 64784.720 ops/s
+# Warmup Iteration  12: 63349.579 ops/s
+# Warmup Iteration  13: 64097.733 ops/s
+# Warmup Iteration  14: 63656.698 ops/s
+# Warmup Iteration  15: 64397.961 ops/s
+# Warmup Iteration  16: 64638.205 ops/s
+# Warmup Iteration  17: 64609.978 ops/s
+# Warmup Iteration  18: 64125.880 ops/s
+# Warmup Iteration  19: 64606.192 ops/s
+# Warmup Iteration  20: 64143.523 ops/s
+Iteration   1: 64769.546 ops/s
+Iteration   2: 62537.411 ops/s
+Iteration   3: 65716.713 ops/s
+Iteration   4: 65559.935 ops/s
+Iteration   5: 64138.336 ops/s
+Iteration   6: 65319.631 ops/s
+Iteration   7: 64728.103 ops/s
+Iteration   8: 65693.944 ops/s
+Iteration   9: 64375.201 ops/s
+Iteration  10: 65293.210 ops/s
+
+WARNING: Not a HotSpot compiler command compatible VM ("anonymous-11.0.6"), compilerHints are disabled.
+# Run progress: 25.00% complete, ETA 00:45:07
+# Fork: 2 of 2
+# Warmup Iteration   1: 73363.916 ops/s
+# Warmup Iteration   2: 74550.218 ops/s
+# Warmup Iteration   3: 62060.956 ops/s
+# Warmup Iteration   4: 61264.706 ops/s
+# Warmup Iteration   5: 61260.285 ops/s
+# Warmup Iteration   6: 63545.908 ops/s
+# Warmup Iteration   7: 61615.081 ops/s
+# Warmup Iteration   8: 62382.663 ops/s
+# Warmup Iteration   9: 63067.069 ops/s
+# Warmup Iteration  10: 62582.491 ops/s
+# Warmup Iteration  11: 62722.068 ops/s
+# Warmup Iteration  12: 61858.831 ops/s
+# Warmup Iteration  13: 61701.482 ops/s
+# Warmup Iteration  14: 62519.809 ops/s
+# Warmup Iteration  15: 61646.130 ops/s
+# Warmup Iteration  16: 63267.753 ops/s
+# Warmup Iteration  17: 62437.491 ops/s
+# Warmup Iteration  18: 62295.050 ops/s
+# Warmup Iteration  19: 61500.263 ops/s
+# Warmup Iteration  20: 61747.163 ops/s
+Iteration   1: 61776.609 ops/s
+Iteration   2: 61960.612 ops/s
+Iteration   3: 60318.858 ops/s
+Iteration   4: 62930.229 ops/s
+Iteration   5: 62134.134 ops/s
+Iteration   6: 61606.376 ops/s
+Iteration   7: 61074.481 ops/s
+Iteration   8: 62054.626 ops/s
+Iteration   9: 62891.708 ops/s
+Iteration  10: 61759.696 ops/s
+
+
+Result "jvmscompare.benchmark.IntListSum.sum_EC_Boxed_Lazy_Parallel":
+  63331.968 ±(99.9%) 1514.016 ops/s [Average]
+  (min, avg, max) = (60318.858, 63331.968, 65716.713), stdev = 1743.544
+  CI (99.9%): [61817.951, 64845.984] (assumes normal distribution)
+
+
+# JMH version: 1.23
+# VM version: JDK 11.0.6, anonymous, openj9-0.18.1
+# *** WARNING: This VM is not supported by JMH. The produced benchmark data can be completely wrong.
+# VM invoker: /Library/Java/JavaVirtualMachines/adoptopenjdk-11-openj9.jdk/Contents/Home/bin/java
+WARNING: Not a HotSpot compiler command compatible VM ("anonymous-11.0.6"), compilerHints are disabled.
+# VM options: -Xoptionsfile=/Library/Java/JavaVirtualMachines/adoptopenjdk-11-openj9.jdk/Contents/Home/lib/options.default -Xlockword:mode=default,noLockword=java/lang/String,noLockword=java/util/MapEntry,noLockword=java/util/HashMap$Entry,noLockword=org/apache/harmony/luni/util/ModifiedMap$Entry,noLockword=java/util/Hashtable$Entry,noLockword=java/lang/invoke/MethodType,noLockword=java/lang/invoke/MethodHandle,noLockword=java/lang/invoke/CollectHandle,noLockword=java/lang/invoke/ConstructorHandle,noLockword=java/lang/invoke/ConvertHandle,noLockword=java/lang/invoke/ArgumentConversionHandle,noLockword=java/lang/invoke/AsTypeHandle,noLockword=java/lang/invoke/ExplicitCastHandle,noLockword=java/lang/invoke/FilterReturnHandle,noLockword=java/lang/invoke/DirectHandle,noLockword=java/lang/invoke/ReceiverBoundHandle,noLockword=java/lang/invoke/DynamicInvokerHandle,noLockword=java/lang/invoke/FieldHandle,noLockword=java/lang/invoke/FieldGetterHandle,noLockword=java/lang/invoke/FieldSetterHandle,noLockword=java/lang/invoke/StaticFieldGetterHandle,noLockword=java/lang/invoke/StaticFieldSetterHandle,noLockword=java/lang/invoke/IndirectHandle,noLockword=java/lang/invoke/InterfaceHandle,noLockword=java/lang/invoke/VirtualHandle,noLockword=java/lang/invoke/PrimitiveHandle,noLockword=java/lang/invoke/InvokeExactHandle,noLockword=java/lang/invoke/InvokeGenericHandle,noLockword=java/lang/invoke/VarargsCollectorHandle,noLockword=java/lang/invoke/ThunkTuple -Xjcl:jclse29 -Dcom.ibm.oti.vm.bootstrap.library.path=/Library/Java/JavaVirtualMachines/adoptopenjdk-11-openj9.jdk/Contents/Home/lib/compressedrefs:/Library/Java/JavaVirtualMachines/adoptopenjdk-11-openj9.jdk/Contents/Home/lib -Dsun.boot.library.path=/Library/Java/JavaVirtualMachines/adoptopenjdk-11-openj9.jdk/Contents/Home/lib/compressedrefs:/Library/Java/JavaVirtualMachines/adoptopenjdk-11-openj9.jdk/Contents/Home/lib -Djava.library.path=/Library/Java/JavaVirtualMachines/adoptopenjdk-11-openj9.jdk/Contents/Home/lib/compressedrefs:/Library/Java/JavaVirtualMachines/adoptopenjdk-11-openj9.jdk/Contents/Home/lib:/usr/lib -Djava.home=/Library/Java/JavaVirtualMachines/adoptopenjdk-11-openj9.jdk/Contents/Home -Duser.dir=/Users/cguntur/projects/conf/jvms-compare -Djava.class.path=/Users/cguntur/projects/conf/jvms-compare/target/classes:/Users/cguntur/.m2/repository/org/eclipse/collections/eclipse-collections-api/10.0.0/eclipse-collections-api-10.0.0.jar:/Users/cguntur/.m2/repository/org/eclipse/collections/eclipse-collections/10.0.0/eclipse-collections-10.0.0.jar:/Users/cguntur/.m2/repository/org/openjdk/jmh/jmh-core/1.23/jmh-core-1.23.jar:/Users/cguntur/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar:/Users/cguntur/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/Users/cguntur/.m2/repository/org/junit/jupiter/junit-jupiter/5.5.0/junit-jupiter-5.5.0.jar:/Users/cguntur/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.5.0/junit-jupiter-api-5.5.0.jar:/Users/cguntur/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/Users/cguntur/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/cguntur/.m2/repository/org/junit/platform/junit-platform-commons/1.5.0/junit-platform-commons-1.5.0.jar:/Users/cguntur/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.5.0/junit-jupiter-params-5.5.0.jar:/Users/cguntur/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.5.0/junit-jupiter-engine-5.5.0.jar:/Users/cguntur/.m2/repository/org/junit/platform/junit-platform-engine/1.5.0/junit-platform-engine-1.5.0.jar -Dsun.java.command=jvmscompare.benchmark.IntListSum 05_AdoptOpenJDKOpenJ9IntListSum -Dsun.java.launcher=SUN_STANDARD
+# Warmup: 20 iterations, 10 s each
+# Measurement: 10 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: jvmscompare.benchmark.IntListSum.sum_EC_Primitive_Eager_Serial
+
+# Run progress: 33.33% complete, ETA 00:40:06
+# Fork: 1 of 2
+# Warmup Iteration   1: 3092551.391 ops/s
+# Warmup Iteration   2: 3205619.063 ops/s
+# Warmup Iteration   3: 3227826.595 ops/s
+# Warmup Iteration   4: 3230105.644 ops/s
+# Warmup Iteration   5: 3223965.394 ops/s
+# Warmup Iteration   6: 3187363.293 ops/s
+# Warmup Iteration   7: 3187866.446 ops/s
+# Warmup Iteration   8: 3187312.115 ops/s
+# Warmup Iteration   9: 3187815.036 ops/s
+# Warmup Iteration  10: 3184440.800 ops/s
+# Warmup Iteration  11: 3181777.033 ops/s
+# Warmup Iteration  12: 3179266.661 ops/s
+# Warmup Iteration  13: 3186605.720 ops/s
+# Warmup Iteration  14: 3188305.819 ops/s
+# Warmup Iteration  15: 3188010.115 ops/s
+# Warmup Iteration  16: 3189167.211 ops/s
+# Warmup Iteration  17: 3186454.500 ops/s
+# Warmup Iteration  18: 3189492.074 ops/s
+# Warmup Iteration  19: 3187853.846 ops/s
+# Warmup Iteration  20: 3188338.323 ops/s
+Iteration   1: 3189441.597 ops/s
+Iteration   2: 3190072.296 ops/s
+Iteration   3: 3183790.144 ops/s
+Iteration   4: 3189772.045 ops/s
+Iteration   5: 3188627.853 ops/s
+Iteration   6: 3186728.507 ops/s
+Iteration   7: 3185857.329 ops/s
+Iteration   8: 3188050.612 ops/s
+Iteration   9: 3185646.134 ops/s
+Iteration  10: 3186708.410 ops/s
+
+WARNING: Not a HotSpot compiler command compatible VM ("anonymous-11.0.6"), compilerHints are disabled.
+# Run progress: 41.67% complete, ETA 00:35:05
+# Fork: 2 of 2
+# Warmup Iteration   1: 2047989.881 ops/s
+# Warmup Iteration   2: 3185548.072 ops/s
+# Warmup Iteration   3: 3232551.567 ops/s
+# Warmup Iteration   4: 3231817.440 ops/s
+# Warmup Iteration   5: 3227568.098 ops/s
+# Warmup Iteration   6: 3188603.617 ops/s
+# Warmup Iteration   7: 3187395.181 ops/s
+# Warmup Iteration   8: 3186986.234 ops/s
+# Warmup Iteration   9: 3188084.154 ops/s
+# Warmup Iteration  10: 3188440.055 ops/s
+# Warmup Iteration  11: 3186374.219 ops/s
+# Warmup Iteration  12: 3188107.851 ops/s
+# Warmup Iteration  13: 3186800.831 ops/s
+# Warmup Iteration  14: 3187272.080 ops/s
+# Warmup Iteration  15: 3187108.952 ops/s
+# Warmup Iteration  16: 3187502.045 ops/s
+# Warmup Iteration  17: 3185845.241 ops/s
+# Warmup Iteration  18: 3187906.223 ops/s
+# Warmup Iteration  19: 3186929.264 ops/s
+# Warmup Iteration  20: 3186663.325 ops/s
+Iteration   1: 3187930.012 ops/s
+Iteration   2: 3177761.230 ops/s
+Iteration   3: 3176000.267 ops/s
+Iteration   4: 3179682.722 ops/s
+Iteration   5: 3122123.404 ops/s
+Iteration   6: 3185362.826 ops/s
+Iteration   7: 3185644.809 ops/s
+Iteration   8: 3186045.126 ops/s
+Iteration   9: 3183943.075 ops/s
+Iteration  10: 3187603.702 ops/s
+
+
+Result "jvmscompare.benchmark.IntListSum.sum_EC_Primitive_Eager_Serial":
+  3182339.605 ±(99.9%) 12741.821 ops/s [Average]
+  (min, avg, max) = (3122123.404, 3182339.605, 3190072.296), stdev = 14673.500
+  CI (99.9%): [3169597.784, 3195081.426] (assumes normal distribution)
+
+
+# JMH version: 1.23
+# VM version: JDK 11.0.6, anonymous, openj9-0.18.1
+# *** WARNING: This VM is not supported by JMH. The produced benchmark data can be completely wrong.
+# VM invoker: /Library/Java/JavaVirtualMachines/adoptopenjdk-11-openj9.jdk/Contents/Home/bin/java
+WARNING: Not a HotSpot compiler command compatible VM ("anonymous-11.0.6"), compilerHints are disabled.
+# VM options: -Xoptionsfile=/Library/Java/JavaVirtualMachines/adoptopenjdk-11-openj9.jdk/Contents/Home/lib/options.default -Xlockword:mode=default,noLockword=java/lang/String,noLockword=java/util/MapEntry,noLockword=java/util/HashMap$Entry,noLockword=org/apache/harmony/luni/util/ModifiedMap$Entry,noLockword=java/util/Hashtable$Entry,noLockword=java/lang/invoke/MethodType,noLockword=java/lang/invoke/MethodHandle,noLockword=java/lang/invoke/CollectHandle,noLockword=java/lang/invoke/ConstructorHandle,noLockword=java/lang/invoke/ConvertHandle,noLockword=java/lang/invoke/ArgumentConversionHandle,noLockword=java/lang/invoke/AsTypeHandle,noLockword=java/lang/invoke/ExplicitCastHandle,noLockword=java/lang/invoke/FilterReturnHandle,noLockword=java/lang/invoke/DirectHandle,noLockword=java/lang/invoke/ReceiverBoundHandle,noLockword=java/lang/invoke/DynamicInvokerHandle,noLockword=java/lang/invoke/FieldHandle,noLockword=java/lang/invoke/FieldGetterHandle,noLockword=java/lang/invoke/FieldSetterHandle,noLockword=java/lang/invoke/StaticFieldGetterHandle,noLockword=java/lang/invoke/StaticFieldSetterHandle,noLockword=java/lang/invoke/IndirectHandle,noLockword=java/lang/invoke/InterfaceHandle,noLockword=java/lang/invoke/VirtualHandle,noLockword=java/lang/invoke/PrimitiveHandle,noLockword=java/lang/invoke/InvokeExactHandle,noLockword=java/lang/invoke/InvokeGenericHandle,noLockword=java/lang/invoke/VarargsCollectorHandle,noLockword=java/lang/invoke/ThunkTuple -Xjcl:jclse29 -Dcom.ibm.oti.vm.bootstrap.library.path=/Library/Java/JavaVirtualMachines/adoptopenjdk-11-openj9.jdk/Contents/Home/lib/compressedrefs:/Library/Java/JavaVirtualMachines/adoptopenjdk-11-openj9.jdk/Contents/Home/lib -Dsun.boot.library.path=/Library/Java/JavaVirtualMachines/adoptopenjdk-11-openj9.jdk/Contents/Home/lib/compressedrefs:/Library/Java/JavaVirtualMachines/adoptopenjdk-11-openj9.jdk/Contents/Home/lib -Djava.library.path=/Library/Java/JavaVirtualMachines/adoptopenjdk-11-openj9.jdk/Contents/Home/lib/compressedrefs:/Library/Java/JavaVirtualMachines/adoptopenjdk-11-openj9.jdk/Contents/Home/lib:/usr/lib -Djava.home=/Library/Java/JavaVirtualMachines/adoptopenjdk-11-openj9.jdk/Contents/Home -Duser.dir=/Users/cguntur/projects/conf/jvms-compare -Djava.class.path=/Users/cguntur/projects/conf/jvms-compare/target/classes:/Users/cguntur/.m2/repository/org/eclipse/collections/eclipse-collections-api/10.0.0/eclipse-collections-api-10.0.0.jar:/Users/cguntur/.m2/repository/org/eclipse/collections/eclipse-collections/10.0.0/eclipse-collections-10.0.0.jar:/Users/cguntur/.m2/repository/org/openjdk/jmh/jmh-core/1.23/jmh-core-1.23.jar:/Users/cguntur/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar:/Users/cguntur/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/Users/cguntur/.m2/repository/org/junit/jupiter/junit-jupiter/5.5.0/junit-jupiter-5.5.0.jar:/Users/cguntur/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.5.0/junit-jupiter-api-5.5.0.jar:/Users/cguntur/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/Users/cguntur/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/cguntur/.m2/repository/org/junit/platform/junit-platform-commons/1.5.0/junit-platform-commons-1.5.0.jar:/Users/cguntur/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.5.0/junit-jupiter-params-5.5.0.jar:/Users/cguntur/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.5.0/junit-jupiter-engine-5.5.0.jar:/Users/cguntur/.m2/repository/org/junit/platform/junit-platform-engine/1.5.0/junit-platform-engine-1.5.0.jar -Dsun.java.command=jvmscompare.benchmark.IntListSum 05_AdoptOpenJDKOpenJ9IntListSum -Dsun.java.launcher=SUN_STANDARD
+# Warmup: 20 iterations, 10 s each
+# Measurement: 10 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: jvmscompare.benchmark.IntListSum.sum_EC_Primitive_Stream_Parallel
+
+# Run progress: 50.00% complete, ETA 00:30:05
+# Fork: 1 of 2
+# Warmup Iteration   1: 36076.290 ops/s
+# Warmup Iteration   2: 37057.483 ops/s
+# Warmup Iteration   3: 44470.449 ops/s
+# Warmup Iteration   4: 36020.250 ops/s
+# Warmup Iteration   5: 57532.952 ops/s
+# Warmup Iteration   6: 39851.081 ops/s
+# Warmup Iteration   7: 37637.961 ops/s
+# Warmup Iteration   8: 36570.671 ops/s
+# Warmup Iteration   9: 37979.219 ops/s
+# Warmup Iteration  10: 36458.167 ops/s
+# Warmup Iteration  11: 36240.485 ops/s
+# Warmup Iteration  12: 37584.969 ops/s
+# Warmup Iteration  13: 36527.404 ops/s
+# Warmup Iteration  14: 37352.464 ops/s
+# Warmup Iteration  15: 36430.626 ops/s
+# Warmup Iteration  16: 37461.316 ops/s
+# Warmup Iteration  17: 38089.317 ops/s
+# Warmup Iteration  18: 36578.972 ops/s
+# Warmup Iteration  19: 37055.752 ops/s
+# Warmup Iteration  20: 36597.685 ops/s
+Iteration   1: 36567.589 ops/s
+Iteration   2: 37654.344 ops/s
+Iteration   3: 37101.168 ops/s
+Iteration   4: 37192.308 ops/s
+Iteration   5: 36502.461 ops/s
+Iteration   6: 36639.941 ops/s
+Iteration   7: 37261.295 ops/s
+Iteration   8: 36703.353 ops/s
+Iteration   9: 38873.440 ops/s
+Iteration  10: 38123.375 ops/s
+
+WARNING: Not a HotSpot compiler command compatible VM ("anonymous-11.0.6"), compilerHints are disabled.
+# Run progress: 58.33% complete, ETA 00:25:04
+# Fork: 2 of 2
+# Warmup Iteration   1: 53786.865 ops/s
+# Warmup Iteration   2: 47954.468 ops/s
+# Warmup Iteration   3: 42762.104 ops/s
+# Warmup Iteration   4: 51171.763 ops/s
+# Warmup Iteration   5: 44390.567 ops/s
+# Warmup Iteration   6: 43968.746 ops/s
+# Warmup Iteration   7: 44684.384 ops/s
+# Warmup Iteration   8: 44038.334 ops/s
+# Warmup Iteration   9: 44003.472 ops/s
+# Warmup Iteration  10: 43846.708 ops/s
+# Warmup Iteration  11: 44167.771 ops/s
+# Warmup Iteration  12: 44017.999 ops/s
+# Warmup Iteration  13: 44546.074 ops/s
+# Warmup Iteration  14: 43973.750 ops/s
+# Warmup Iteration  15: 43622.816 ops/s
+# Warmup Iteration  16: 43792.944 ops/s
+# Warmup Iteration  17: 43835.841 ops/s
+# Warmup Iteration  18: 43873.568 ops/s
+# Warmup Iteration  19: 44423.826 ops/s
+# Warmup Iteration  20: 44632.565 ops/s
+Iteration   1: 44793.230 ops/s
+Iteration   2: 43141.313 ops/s
+Iteration   3: 44747.931 ops/s
+Iteration   4: 43910.574 ops/s
+Iteration   5: 45624.297 ops/s
+Iteration   6: 43864.142 ops/s
+Iteration   7: 43817.747 ops/s
+Iteration   8: 44705.818 ops/s
+Iteration   9: 43914.781 ops/s
+Iteration  10: 44774.363 ops/s
+
+
+Result "jvmscompare.benchmark.IntListSum.sum_EC_Primitive_Stream_Parallel":
+  40795.674 ±(99.9%) 3210.215 ops/s [Average]
+  (min, avg, max) = (36502.461, 40795.674, 45624.297), stdev = 3696.888
+  CI (99.9%): [37585.459, 44005.888] (assumes normal distribution)
+
+
+# JMH version: 1.23
+# VM version: JDK 11.0.6, anonymous, openj9-0.18.1
+# *** WARNING: This VM is not supported by JMH. The produced benchmark data can be completely wrong.
+# VM invoker: /Library/Java/JavaVirtualMachines/adoptopenjdk-11-openj9.jdk/Contents/Home/bin/java
+WARNING: Not a HotSpot compiler command compatible VM ("anonymous-11.0.6"), compilerHints are disabled.
+# VM options: -Xoptionsfile=/Library/Java/JavaVirtualMachines/adoptopenjdk-11-openj9.jdk/Contents/Home/lib/options.default -Xlockword:mode=default,noLockword=java/lang/String,noLockword=java/util/MapEntry,noLockword=java/util/HashMap$Entry,noLockword=org/apache/harmony/luni/util/ModifiedMap$Entry,noLockword=java/util/Hashtable$Entry,noLockword=java/lang/invoke/MethodType,noLockword=java/lang/invoke/MethodHandle,noLockword=java/lang/invoke/CollectHandle,noLockword=java/lang/invoke/ConstructorHandle,noLockword=java/lang/invoke/ConvertHandle,noLockword=java/lang/invoke/ArgumentConversionHandle,noLockword=java/lang/invoke/AsTypeHandle,noLockword=java/lang/invoke/ExplicitCastHandle,noLockword=java/lang/invoke/FilterReturnHandle,noLockword=java/lang/invoke/DirectHandle,noLockword=java/lang/invoke/ReceiverBoundHandle,noLockword=java/lang/invoke/DynamicInvokerHandle,noLockword=java/lang/invoke/FieldHandle,noLockword=java/lang/invoke/FieldGetterHandle,noLockword=java/lang/invoke/FieldSetterHandle,noLockword=java/lang/invoke/StaticFieldGetterHandle,noLockword=java/lang/invoke/StaticFieldSetterHandle,noLockword=java/lang/invoke/IndirectHandle,noLockword=java/lang/invoke/InterfaceHandle,noLockword=java/lang/invoke/VirtualHandle,noLockword=java/lang/invoke/PrimitiveHandle,noLockword=java/lang/invoke/InvokeExactHandle,noLockword=java/lang/invoke/InvokeGenericHandle,noLockword=java/lang/invoke/VarargsCollectorHandle,noLockword=java/lang/invoke/ThunkTuple -Xjcl:jclse29 -Dcom.ibm.oti.vm.bootstrap.library.path=/Library/Java/JavaVirtualMachines/adoptopenjdk-11-openj9.jdk/Contents/Home/lib/compressedrefs:/Library/Java/JavaVirtualMachines/adoptopenjdk-11-openj9.jdk/Contents/Home/lib -Dsun.boot.library.path=/Library/Java/JavaVirtualMachines/adoptopenjdk-11-openj9.jdk/Contents/Home/lib/compressedrefs:/Library/Java/JavaVirtualMachines/adoptopenjdk-11-openj9.jdk/Contents/Home/lib -Djava.library.path=/Library/Java/JavaVirtualMachines/adoptopenjdk-11-openj9.jdk/Contents/Home/lib/compressedrefs:/Library/Java/JavaVirtualMachines/adoptopenjdk-11-openj9.jdk/Contents/Home/lib:/usr/lib -Djava.home=/Library/Java/JavaVirtualMachines/adoptopenjdk-11-openj9.jdk/Contents/Home -Duser.dir=/Users/cguntur/projects/conf/jvms-compare -Djava.class.path=/Users/cguntur/projects/conf/jvms-compare/target/classes:/Users/cguntur/.m2/repository/org/eclipse/collections/eclipse-collections-api/10.0.0/eclipse-collections-api-10.0.0.jar:/Users/cguntur/.m2/repository/org/eclipse/collections/eclipse-collections/10.0.0/eclipse-collections-10.0.0.jar:/Users/cguntur/.m2/repository/org/openjdk/jmh/jmh-core/1.23/jmh-core-1.23.jar:/Users/cguntur/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar:/Users/cguntur/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/Users/cguntur/.m2/repository/org/junit/jupiter/junit-jupiter/5.5.0/junit-jupiter-5.5.0.jar:/Users/cguntur/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.5.0/junit-jupiter-api-5.5.0.jar:/Users/cguntur/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/Users/cguntur/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/cguntur/.m2/repository/org/junit/platform/junit-platform-commons/1.5.0/junit-platform-commons-1.5.0.jar:/Users/cguntur/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.5.0/junit-jupiter-params-5.5.0.jar:/Users/cguntur/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.5.0/junit-jupiter-engine-5.5.0.jar:/Users/cguntur/.m2/repository/org/junit/platform/junit-platform-engine/1.5.0/junit-platform-engine-1.5.0.jar -Dsun.java.command=jvmscompare.benchmark.IntListSum 05_AdoptOpenJDKOpenJ9IntListSum -Dsun.java.launcher=SUN_STANDARD
+# Warmup: 20 iterations, 10 s each
+# Measurement: 10 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: jvmscompare.benchmark.IntListSum.sum_JDK_Boxed_Stream_Parallel
+
+# Run progress: 66.67% complete, ETA 00:20:03
+# Fork: 1 of 2
+# Warmup Iteration   1: 41686.118 ops/s
+# Warmup Iteration   2: 45198.016 ops/s
+# Warmup Iteration   3: 53232.065 ops/s
+# Warmup Iteration   4: 50952.931 ops/s
+# Warmup Iteration   5: 52595.525 ops/s
+# Warmup Iteration   6: 53036.818 ops/s
+# Warmup Iteration   7: 51122.847 ops/s
+# Warmup Iteration   8: 51972.181 ops/s
+# Warmup Iteration   9: 51215.548 ops/s
+# Warmup Iteration  10: 52051.093 ops/s
+# Warmup Iteration  11: 52007.208 ops/s
+# Warmup Iteration  12: 50799.597 ops/s
+# Warmup Iteration  13: 50688.897 ops/s
+# Warmup Iteration  14: 53105.926 ops/s
+# Warmup Iteration  15: 52439.701 ops/s
+# Warmup Iteration  16: 51258.957 ops/s
+# Warmup Iteration  17: 55155.296 ops/s
+# Warmup Iteration  18: 51366.185 ops/s
+# Warmup Iteration  19: 53831.585 ops/s
+# Warmup Iteration  20: 51551.278 ops/s
+Iteration   1: 50620.680 ops/s
+Iteration   2: 50676.542 ops/s
+Iteration   3: 53679.713 ops/s
+Iteration   4: 51258.073 ops/s
+Iteration   5: 51393.641 ops/s
+Iteration   6: 51240.286 ops/s
+Iteration   7: 55477.240 ops/s
+Iteration   8: 52963.194 ops/s
+Iteration   9: 51320.337 ops/s
+Iteration  10: 50916.558 ops/s
+
+WARNING: Not a HotSpot compiler command compatible VM ("anonymous-11.0.6"), compilerHints are disabled.
+# Run progress: 75.00% complete, ETA 00:15:02
+# Fork: 2 of 2
+# Warmup Iteration   1: 44301.799 ops/s
+# Warmup Iteration   2: 53120.461 ops/s
+# Warmup Iteration   3: 49805.249 ops/s
+# Warmup Iteration   4: 46847.967 ops/s
+# Warmup Iteration   5: 47228.353 ops/s
+# Warmup Iteration   6: 45841.376 ops/s
+# Warmup Iteration   7: 50227.803 ops/s
+# Warmup Iteration   8: 48244.693 ops/s
+# Warmup Iteration   9: 46093.185 ops/s
+# Warmup Iteration  10: 45508.273 ops/s
+# Warmup Iteration  11: 47355.750 ops/s
+# Warmup Iteration  12: 46773.152 ops/s
+# Warmup Iteration  13: 47419.605 ops/s
+# Warmup Iteration  14: 51536.754 ops/s
+# Warmup Iteration  15: 47298.870 ops/s
+# Warmup Iteration  16: 45485.506 ops/s
+# Warmup Iteration  17: 47250.155 ops/s
+# Warmup Iteration  18: 45903.165 ops/s
+# Warmup Iteration  19: 47181.403 ops/s
+# Warmup Iteration  20: 45906.435 ops/s
+Iteration   1: 47008.862 ops/s
+Iteration   2: 45642.260 ops/s
+Iteration   3: 45503.029 ops/s
+Iteration   4: 45835.796 ops/s
+Iteration   5: 46920.854 ops/s
+Iteration   6: 47302.523 ops/s
+Iteration   7: 46230.309 ops/s
+Iteration   8: 46326.845 ops/s
+Iteration   9: 47009.171 ops/s
+Iteration  10: 45809.009 ops/s
+
+
+Result "jvmscompare.benchmark.IntListSum.sum_JDK_Boxed_Stream_Parallel":
+  49156.746 ±(99.9%) 2695.357 ops/s [Average]
+  (min, avg, max) = (45503.029, 49156.746, 55477.240), stdev = 3103.977
+  CI (99.9%): [46461.389, 51852.103] (assumes normal distribution)
+
+
+# JMH version: 1.23
+# VM version: JDK 11.0.6, anonymous, openj9-0.18.1
+# *** WARNING: This VM is not supported by JMH. The produced benchmark data can be completely wrong.
+# VM invoker: /Library/Java/JavaVirtualMachines/adoptopenjdk-11-openj9.jdk/Contents/Home/bin/java
+WARNING: Not a HotSpot compiler command compatible VM ("anonymous-11.0.6"), compilerHints are disabled.
+# VM options: -Xoptionsfile=/Library/Java/JavaVirtualMachines/adoptopenjdk-11-openj9.jdk/Contents/Home/lib/options.default -Xlockword:mode=default,noLockword=java/lang/String,noLockword=java/util/MapEntry,noLockword=java/util/HashMap$Entry,noLockword=org/apache/harmony/luni/util/ModifiedMap$Entry,noLockword=java/util/Hashtable$Entry,noLockword=java/lang/invoke/MethodType,noLockword=java/lang/invoke/MethodHandle,noLockword=java/lang/invoke/CollectHandle,noLockword=java/lang/invoke/ConstructorHandle,noLockword=java/lang/invoke/ConvertHandle,noLockword=java/lang/invoke/ArgumentConversionHandle,noLockword=java/lang/invoke/AsTypeHandle,noLockword=java/lang/invoke/ExplicitCastHandle,noLockword=java/lang/invoke/FilterReturnHandle,noLockword=java/lang/invoke/DirectHandle,noLockword=java/lang/invoke/ReceiverBoundHandle,noLockword=java/lang/invoke/DynamicInvokerHandle,noLockword=java/lang/invoke/FieldHandle,noLockword=java/lang/invoke/FieldGetterHandle,noLockword=java/lang/invoke/FieldSetterHandle,noLockword=java/lang/invoke/StaticFieldGetterHandle,noLockword=java/lang/invoke/StaticFieldSetterHandle,noLockword=java/lang/invoke/IndirectHandle,noLockword=java/lang/invoke/InterfaceHandle,noLockword=java/lang/invoke/VirtualHandle,noLockword=java/lang/invoke/PrimitiveHandle,noLockword=java/lang/invoke/InvokeExactHandle,noLockword=java/lang/invoke/InvokeGenericHandle,noLockword=java/lang/invoke/VarargsCollectorHandle,noLockword=java/lang/invoke/ThunkTuple -Xjcl:jclse29 -Dcom.ibm.oti.vm.bootstrap.library.path=/Library/Java/JavaVirtualMachines/adoptopenjdk-11-openj9.jdk/Contents/Home/lib/compressedrefs:/Library/Java/JavaVirtualMachines/adoptopenjdk-11-openj9.jdk/Contents/Home/lib -Dsun.boot.library.path=/Library/Java/JavaVirtualMachines/adoptopenjdk-11-openj9.jdk/Contents/Home/lib/compressedrefs:/Library/Java/JavaVirtualMachines/adoptopenjdk-11-openj9.jdk/Contents/Home/lib -Djava.library.path=/Library/Java/JavaVirtualMachines/adoptopenjdk-11-openj9.jdk/Contents/Home/lib/compressedrefs:/Library/Java/JavaVirtualMachines/adoptopenjdk-11-openj9.jdk/Contents/Home/lib:/usr/lib -Djava.home=/Library/Java/JavaVirtualMachines/adoptopenjdk-11-openj9.jdk/Contents/Home -Duser.dir=/Users/cguntur/projects/conf/jvms-compare -Djava.class.path=/Users/cguntur/projects/conf/jvms-compare/target/classes:/Users/cguntur/.m2/repository/org/eclipse/collections/eclipse-collections-api/10.0.0/eclipse-collections-api-10.0.0.jar:/Users/cguntur/.m2/repository/org/eclipse/collections/eclipse-collections/10.0.0/eclipse-collections-10.0.0.jar:/Users/cguntur/.m2/repository/org/openjdk/jmh/jmh-core/1.23/jmh-core-1.23.jar:/Users/cguntur/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar:/Users/cguntur/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/Users/cguntur/.m2/repository/org/junit/jupiter/junit-jupiter/5.5.0/junit-jupiter-5.5.0.jar:/Users/cguntur/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.5.0/junit-jupiter-api-5.5.0.jar:/Users/cguntur/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/Users/cguntur/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/cguntur/.m2/repository/org/junit/platform/junit-platform-commons/1.5.0/junit-platform-commons-1.5.0.jar:/Users/cguntur/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.5.0/junit-jupiter-params-5.5.0.jar:/Users/cguntur/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.5.0/junit-jupiter-engine-5.5.0.jar:/Users/cguntur/.m2/repository/org/junit/platform/junit-platform-engine/1.5.0/junit-platform-engine-1.5.0.jar -Dsun.java.command=jvmscompare.benchmark.IntListSum 05_AdoptOpenJDKOpenJ9IntListSum -Dsun.java.launcher=SUN_STANDARD
+# Warmup: 20 iterations, 10 s each
+# Measurement: 10 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: jvmscompare.benchmark.IntListSum.sum_JDK_Boxed_Stream_Serial
+
+# Run progress: 83.33% complete, ETA 00:10:01
+# Fork: 1 of 2
+# Warmup Iteration   1: 141836.167 ops/s
+# Warmup Iteration   2: 155990.009 ops/s
+# Warmup Iteration   3: 164197.310 ops/s
+# Warmup Iteration   4: 163675.349 ops/s
+# Warmup Iteration   5: 163661.009 ops/s
+# Warmup Iteration   6: 163420.460 ops/s
+# Warmup Iteration   7: 163545.759 ops/s
+# Warmup Iteration   8: 163544.947 ops/s
+# Warmup Iteration   9: 163187.332 ops/s
+# Warmup Iteration  10: 163646.244 ops/s
+# Warmup Iteration  11: 163440.087 ops/s
+# Warmup Iteration  12: 163213.099 ops/s
+# Warmup Iteration  13: 162276.654 ops/s
+# Warmup Iteration  14: 162868.831 ops/s
+# Warmup Iteration  15: 163177.592 ops/s
+# Warmup Iteration  16: 163040.305 ops/s
+# Warmup Iteration  17: 165148.390 ops/s
+# Warmup Iteration  18: 162730.895 ops/s
+# Warmup Iteration  19: 165067.164 ops/s
+# Warmup Iteration  20: 162744.137 ops/s
+Iteration   1: 165159.949 ops/s
+Iteration   2: 162610.621 ops/s
+Iteration   3: 164311.784 ops/s
+Iteration   4: 164997.776 ops/s
+Iteration   5: 162633.425 ops/s
+Iteration   6: 165117.303 ops/s
+Iteration   7: 162716.357 ops/s
+Iteration   8: 165044.258 ops/s
+Iteration   9: 162761.621 ops/s
+Iteration  10: 165003.986 ops/s
+
+WARNING: Not a HotSpot compiler command compatible VM ("anonymous-11.0.6"), compilerHints are disabled.
+# Run progress: 91.67% complete, ETA 00:05:00
+# Fork: 2 of 2
+# Warmup Iteration   1: 140788.315 ops/s
+# Warmup Iteration   2: 159353.849 ops/s
+# Warmup Iteration   3: 164132.948 ops/s
+# Warmup Iteration   4: 164156.737 ops/s
+# Warmup Iteration   5: 163678.937 ops/s
+# Warmup Iteration   6: 163660.897 ops/s
+# Warmup Iteration   7: 163603.100 ops/s
+# Warmup Iteration   8: 163098.138 ops/s
+# Warmup Iteration   9: 162763.953 ops/s
+# Warmup Iteration  10: 162596.456 ops/s
+# Warmup Iteration  11: 162785.358 ops/s
+# Warmup Iteration  12: 163085.216 ops/s
+# Warmup Iteration  13: 164808.927 ops/s
+# Warmup Iteration  14: 163868.546 ops/s
+# Warmup Iteration  15: 164909.984 ops/s
+# Warmup Iteration  16: 163055.223 ops/s
+# Warmup Iteration  17: 163588.711 ops/s
+# Warmup Iteration  18: 164338.835 ops/s
+# Warmup Iteration  19: 163059.126 ops/s
+# Warmup Iteration  20: 165061.024 ops/s
+Iteration   1: 163161.554 ops/s
+Iteration   2: 164974.849 ops/s
+Iteration   3: 163162.435 ops/s
+Iteration   4: 164965.303 ops/s
+Iteration   5: 163113.936 ops/s
+Iteration   6: 165041.923 ops/s
+Iteration   7: 163170.485 ops/s
+Iteration   8: 164921.248 ops/s
+Iteration   9: 163240.687 ops/s
+Iteration  10: 165047.066 ops/s
+
+
+Result "jvmscompare.benchmark.IntListSum.sum_JDK_Boxed_Stream_Serial":
+  164057.828 ±(99.9%) 914.316 ops/s [Average]
+  (min, avg, max) = (162610.621, 164057.828, 165159.949), stdev = 1052.928
+  CI (99.9%): [163143.512, 164972.144] (assumes normal distribution)
+
+
+# Run complete. Total time: 01:00:09
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+Benchmark                                     Mode  Cnt        Score       Error  Units
+IntListSum.sum_EC_Boxed_Eager_Serial         thrpt   20   383346.271 ±  1045.602  ops/s
+IntListSum.sum_EC_Boxed_Lazy_Parallel        thrpt   20    63331.968 ±  1514.016  ops/s
+IntListSum.sum_EC_Primitive_Eager_Serial     thrpt   20  3182339.605 ± 12741.821  ops/s
+IntListSum.sum_EC_Primitive_Stream_Parallel  thrpt   20    40795.674 ±  3210.215  ops/s
+IntListSum.sum_JDK_Boxed_Stream_Parallel     thrpt   20    49156.746 ±  2695.357  ops/s
+IntListSum.sum_JDK_Boxed_Stream_Serial       thrpt   20   164057.828 ±   914.316  ops/s
+
+Benchmark result is saved to benchmark-results/int-list-sum/05_AdoptOpenJDKOpenJ9IntListSum.csv
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  01:00 h
+[INFO] Finished at: 2020-01-27T06:44:42-05:00
+[INFO] ------------------------------------------------------------------------
