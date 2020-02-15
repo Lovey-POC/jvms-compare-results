@@ -1,0 +1,626 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------------< jvms-compare:jvms-compare >----------------------
+[INFO] Building JVMs Compare 1.0.0
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ jvms-compare ---
+[INFO] Deleting /Users/dr/projects/jvms-compare/target
+[INFO] 
+[INFO] --- maven-toolchains-plugin:1.1:toolchain (default) @ jvms-compare ---
+[INFO] Required toolchain: jdk [ vendor='graalvmee' version='11' ]
+[INFO] Found matching toolchain for type jdk: JDK[/Library/Java/JavaVirtualMachines/graalvm-ee-java11-19.3.1/]
+[INFO] 
+[INFO] --- maven-dependency-plugin:3.1.1:build-classpath (build-classpath) @ jvms-compare ---
+[INFO] Dependencies classpath:
+/Users/dr/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/Users/dr/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.5.0/junit-jupiter-api-5.5.0.jar:/Users/dr/.m2/repository/org/eclipse/collections/eclipse-collections/10.0.0/eclipse-collections-10.0.0.jar:/Users/dr/.m2/repository/org/junit/platform/junit-platform-engine/1.5.0/junit-platform-engine-1.5.0.jar:/Users/dr/.m2/repository/org/junit/platform/junit-platform-commons/1.5.0/junit-platform-commons-1.5.0.jar:/Users/dr/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.5.0/junit-jupiter-params-5.5.0.jar:/Users/dr/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.5.0/junit-jupiter-engine-5.5.0.jar:/Users/dr/.m2/repository/org/junit/jupiter/junit-jupiter/5.5.0/junit-jupiter-5.5.0.jar:/Users/dr/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/dr/.m2/repository/org/openjdk/jmh/jmh-core/1.23/jmh-core-1.23.jar:/Users/dr/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/Users/dr/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar:/Users/dr/.m2/repository/org/eclipse/collections/eclipse-collections-api/10.0.0/eclipse-collections-api-10.0.0.jar
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ jvms-compare ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ jvms-compare ---
+[INFO] Toolchain in maven-compiler-plugin: JDK[/Library/Java/JavaVirtualMachines/graalvm-ee-java11-19.3.1/]
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 10 source files to /Users/dr/projects/jvms-compare/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ jvms-compare ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ jvms-compare ---
+[INFO] Toolchain in maven-compiler-plugin: JDK[/Library/Java/JavaVirtualMachines/graalvm-ee-java11-19.3.1/]
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 2 source files to /Users/dr/projects/jvms-compare/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ jvms-compare ---
+[INFO] Toolchain in surefire-plugin: JDK[/Library/Java/JavaVirtualMachines/graalvm-ee-java11-19.3.1/]
+[INFO] Surefire report directory: /Users/dr/projects/jvms-compare/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running jvmscompare.PersonTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.447 sec
+Running jvmscompare.IntListTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.133 sec
+
+Results :
+
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- exec-maven-plugin:1.6.0:exec (transform) @ jvms-compare ---
+[INFO] Toolchain in exec-maven-plugin: JDK[/Library/Java/JavaVirtualMachines/graalvm-ee-java11-19.3.1/]
+##### Heap utilization statistics [MB] #####
+Used Memory:14
+Free Memory:1009
+Total Memory:1024
+Max Memory:1024
+Java Runtime Environment version: 11.0.6
+Java Runtime Environment vendor: Oracle Corporation
+
+Java Runtime Name: Java(TM) SE Runtime Environment
+Java Runtime Version: 11.0.6+1-LTS-jvmci-19.3-b07
+
+Java Virtual Machine name: anonymous
+Java Virtual Machine vendor: Oracle Corporation
+Java Virtual Machine version: 11.0.6+1-LTS-jvmci-19.3-b07
+
+Java Class Version: 55.0
+
+Benchmark size: 1000000
+Benchmark forks: 2
+Benchmark warmups: 20
+Benchmark measurements: 10
+
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.openjdk.jmh.util.Utils (file:/Users/dr/.m2/repository/org/openjdk/jmh/jmh-core/1.23/jmh-core-1.23.jar) to field java.io.PrintStream.charOut
+WARNING: Please consider reporting this to the maintainers of org.openjdk.jmh.util.Utils
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+# JMH version: 1.23
+# VM version: JDK 11.0.6, anonymous, 11.0.6+1-LTS-jvmci-19.3-b07
+# *** WARNING: This VM is not supported by JMH. The produced benchmark data can be completely wrong.
+# VM invoker: /Library/Java/JavaVirtualMachines/graalvm-ee-java11-19.3.1/Contents/Home/bin/java
+# VM options: -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCIProduct -XX:-UnlockExperimentalVMOptions -Xms1024m -Xmx1024m
+# Warmup: 20 iterations, 10 s each
+# Measurement: 10 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: jvmscompare.benchmark.IntListTransform.transform_EC_Boxed_Eager_Serial
+
+WARNING: Not a HotSpot compiler command compatible VM ("anonymous-11.0.6"), compilerHints are disabled.
+# Run progress: 0.00% complete, ETA 01:00:00
+# Fork: 1 of 2
+# Warmup Iteration   1: 38.221 ops/s
+# Warmup Iteration   2: 37.842 ops/s
+# Warmup Iteration   3: 38.876 ops/s
+# Warmup Iteration   4: 38.675 ops/s
+# Warmup Iteration   5: 37.811 ops/s
+# Warmup Iteration   6: 37.567 ops/s
+# Warmup Iteration   7: 38.304 ops/s
+# Warmup Iteration   8: 35.071 ops/s
+# Warmup Iteration   9: 38.335 ops/s
+# Warmup Iteration  10: 37.745 ops/s
+# Warmup Iteration  11: 38.170 ops/s
+# Warmup Iteration  12: 37.512 ops/s
+# Warmup Iteration  13: 37.123 ops/s
+# Warmup Iteration  14: 37.756 ops/s
+# Warmup Iteration  15: 38.020 ops/s
+# Warmup Iteration  16: 37.946 ops/s
+# Warmup Iteration  17: 37.287 ops/s
+# Warmup Iteration  18: 38.173 ops/s
+# Warmup Iteration  19: 38.205 ops/s
+# Warmup Iteration  20: 38.449 ops/s
+Iteration   1: 39.162 ops/s
+Iteration   2: 37.368 ops/s
+Iteration   3: 38.469 ops/s
+Iteration   4: 38.287 ops/s
+Iteration   5: 38.185 ops/s
+Iteration   6: 38.451 ops/s
+Iteration   7: 37.879 ops/s
+Iteration   8: 38.581 ops/s
+Iteration   9: 38.297 ops/s
+Iteration  10: 38.756 ops/s
+
+WARNING: Not a HotSpot compiler command compatible VM ("anonymous-11.0.6"), compilerHints are disabled.
+# Run progress: 8.33% complete, ETA 00:55:23
+# Fork: 2 of 2
+# Warmup Iteration   1: 38.129 ops/s
+# Warmup Iteration   2: 38.576 ops/s
+# Warmup Iteration   3: 37.492 ops/s
+# Warmup Iteration   4: 38.999 ops/s
+# Warmup Iteration   5: 38.387 ops/s
+# Warmup Iteration   6: 37.875 ops/s
+# Warmup Iteration   7: 35.881 ops/s
+# Warmup Iteration   8: 37.941 ops/s
+# Warmup Iteration   9: 38.431 ops/s
+# Warmup Iteration  10: 37.442 ops/s
+# Warmup Iteration  11: 38.173 ops/s
+# Warmup Iteration  12: 37.163 ops/s
+# Warmup Iteration  13: 30.258 ops/s
+# Warmup Iteration  14: 33.373 ops/s
+# Warmup Iteration  15: 36.098 ops/s
+# Warmup Iteration  16: 38.221 ops/s
+# Warmup Iteration  17: 29.980 ops/s
+# Warmup Iteration  18: 37.237 ops/s
+# Warmup Iteration  19: 37.819 ops/s
+# Warmup Iteration  20: 38.620 ops/s
+Iteration   1: 38.376 ops/s
+Iteration   2: 37.987 ops/s
+Iteration   3: 38.169 ops/s
+Iteration   4: 38.092 ops/s
+Iteration   5: 38.157 ops/s
+Iteration   6: 38.014 ops/s
+Iteration   7: 38.320 ops/s
+Iteration   8: 37.884 ops/s
+Iteration   9: 36.710 ops/s
+Iteration  10: 38.342 ops/s
+
+
+Result "jvmscompare.benchmark.IntListTransform.transform_EC_Boxed_Eager_Serial":
+  38.174 ±(99.9%) 0.436 ops/s [Average]
+  (min, avg, max) = (36.710, 38.174, 39.162), stdev = 0.502
+  CI (99.9%): [37.738, 38.611] (assumes normal distribution)
+
+
+# JMH version: 1.23
+# VM version: JDK 11.0.6, anonymous, 11.0.6+1-LTS-jvmci-19.3-b07
+# *** WARNING: This VM is not supported by JMH. The produced benchmark data can be completely wrong.
+# VM invoker: /Library/Java/JavaVirtualMachines/graalvm-ee-java11-19.3.1/Contents/Home/bin/java
+# VM options: -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCIProduct -XX:-UnlockExperimentalVMOptions -Xms1024m -Xmx1024m
+# Warmup: 20 iterations, 10 s each
+# Measurement: 10 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: jvmscompare.benchmark.IntListTransform.transform_EC_Boxed_Lazy_Parallel
+
+WARNING: Not a HotSpot compiler command compatible VM ("anonymous-11.0.6"), compilerHints are disabled.
+# Run progress: 16.67% complete, ETA 00:50:21
+# Fork: 1 of 2
+# Warmup Iteration   1: 84.474 ops/s
+# Warmup Iteration   2: 92.467 ops/s
+# Warmup Iteration   3: 91.849 ops/s
+# Warmup Iteration   4: 91.842 ops/s
+# Warmup Iteration   5: 91.720 ops/s
+# Warmup Iteration   6: 93.148 ops/s
+# Warmup Iteration   7: 92.472 ops/s
+# Warmup Iteration   8: 91.950 ops/s
+# Warmup Iteration   9: 93.225 ops/s
+# Warmup Iteration  10: 92.918 ops/s
+# Warmup Iteration  11: 92.671 ops/s
+# Warmup Iteration  12: 93.942 ops/s
+# Warmup Iteration  13: 92.357 ops/s
+# Warmup Iteration  14: 91.216 ops/s
+# Warmup Iteration  15: 92.346 ops/s
+# Warmup Iteration  16: 91.979 ops/s
+# Warmup Iteration  17: 92.011 ops/s
+# Warmup Iteration  18: 93.631 ops/s
+# Warmup Iteration  19: 92.185 ops/s
+# Warmup Iteration  20: 92.363 ops/s
+Iteration   1: 93.079 ops/s
+Iteration   2: 91.777 ops/s
+Iteration   3: 90.046 ops/s
+Iteration   4: 90.894 ops/s
+Iteration   5: 92.356 ops/s
+Iteration   6: 91.519 ops/s
+Iteration   7: 91.990 ops/s
+Iteration   8: 92.484 ops/s
+Iteration   9: 92.056 ops/s
+Iteration  10: 91.724 ops/s
+
+WARNING: Not a HotSpot compiler command compatible VM ("anonymous-11.0.6"), compilerHints are disabled.
+# Run progress: 25.00% complete, ETA 00:45:18
+# Fork: 2 of 2
+# Warmup Iteration   1: 77.505 ops/s
+# Warmup Iteration   2: 87.041 ops/s
+# Warmup Iteration   3: 86.935 ops/s
+# Warmup Iteration   4: 88.795 ops/s
+# Warmup Iteration   5: 86.773 ops/s
+# Warmup Iteration   6: 86.629 ops/s
+# Warmup Iteration   7: 89.255 ops/s
+# Warmup Iteration   8: 87.939 ops/s
+# Warmup Iteration   9: 87.973 ops/s
+# Warmup Iteration  10: 88.040 ops/s
+# Warmup Iteration  11: 88.715 ops/s
+# Warmup Iteration  12: 87.623 ops/s
+# Warmup Iteration  13: 87.986 ops/s
+# Warmup Iteration  14: 87.967 ops/s
+# Warmup Iteration  15: 87.736 ops/s
+# Warmup Iteration  16: 87.940 ops/s
+# Warmup Iteration  17: 88.425 ops/s
+# Warmup Iteration  18: 87.578 ops/s
+# Warmup Iteration  19: 86.879 ops/s
+# Warmup Iteration  20: 89.375 ops/s
+Iteration   1: 87.105 ops/s
+Iteration   2: 86.696 ops/s
+Iteration   3: 87.698 ops/s
+Iteration   4: 87.073 ops/s
+Iteration   5: 87.521 ops/s
+Iteration   6: 86.065 ops/s
+Iteration   7: 86.444 ops/s
+Iteration   8: 86.488 ops/s
+Iteration   9: 87.752 ops/s
+Iteration  10: 87.969 ops/s
+
+
+Result "jvmscompare.benchmark.IntListTransform.transform_EC_Boxed_Lazy_Parallel":
+  89.437 ±(99.9%) 2.193 ops/s [Average]
+  (min, avg, max) = (86.065, 89.437, 93.079), stdev = 2.526
+  CI (99.9%): [87.243, 91.630] (assumes normal distribution)
+
+
+# JMH version: 1.23
+# VM version: JDK 11.0.6, anonymous, 11.0.6+1-LTS-jvmci-19.3-b07
+# *** WARNING: This VM is not supported by JMH. The produced benchmark data can be completely wrong.
+# VM invoker: /Library/Java/JavaVirtualMachines/graalvm-ee-java11-19.3.1/Contents/Home/bin/java
+# VM options: -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCIProduct -XX:-UnlockExperimentalVMOptions -Xms1024m -Xmx1024m
+# Warmup: 20 iterations, 10 s each
+# Measurement: 10 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: jvmscompare.benchmark.IntListTransform.transform_EC_Primitive_Eager_Serial
+
+WARNING: Not a HotSpot compiler command compatible VM ("anonymous-11.0.6"), compilerHints are disabled.
+# Run progress: 33.33% complete, ETA 00:40:16
+# Fork: 1 of 2
+# Warmup Iteration   1: 205.937 ops/s
+# Warmup Iteration   2: 213.291 ops/s
+# Warmup Iteration   3: 257.622 ops/s
+# Warmup Iteration   4: 305.542 ops/s
+# Warmup Iteration   5: 305.190 ops/s
+# Warmup Iteration   6: 306.386 ops/s
+# Warmup Iteration   7: 303.736 ops/s
+# Warmup Iteration   8: 301.075 ops/s
+# Warmup Iteration   9: 305.787 ops/s
+# Warmup Iteration  10: 302.034 ops/s
+# Warmup Iteration  11: 304.218 ops/s
+# Warmup Iteration  12: 306.889 ops/s
+# Warmup Iteration  13: 304.308 ops/s
+# Warmup Iteration  14: 304.689 ops/s
+# Warmup Iteration  15: 305.173 ops/s
+# Warmup Iteration  16: 307.624 ops/s
+# Warmup Iteration  17: 305.759 ops/s
+# Warmup Iteration  18: 305.810 ops/s
+# Warmup Iteration  19: 307.932 ops/s
+# Warmup Iteration  20: 305.286 ops/s
+Iteration   1: 297.224 ops/s
+Iteration   2: 213.027 ops/s
+Iteration   3: 208.692 ops/s
+Iteration   4: 206.162 ops/s
+Iteration   5: 244.142 ops/s
+Iteration   6: 204.604 ops/s
+Iteration   7: 203.668 ops/s
+Iteration   8: 206.938 ops/s
+Iteration   9: 239.410 ops/s
+Iteration  10: 226.257 ops/s
+
+WARNING: Not a HotSpot compiler command compatible VM ("anonymous-11.0.6"), compilerHints are disabled.
+# Run progress: 41.67% complete, ETA 00:35:13
+# Fork: 2 of 2
+# Warmup Iteration   1: 223.739 ops/s
+# Warmup Iteration   2: 230.690 ops/s
+# Warmup Iteration   3: 231.198 ops/s
+# Warmup Iteration   4: 233.923 ops/s
+# Warmup Iteration   5: 259.629 ops/s
+# Warmup Iteration   6: 277.655 ops/s
+# Warmup Iteration   7: 277.956 ops/s
+# Warmup Iteration   8: 280.726 ops/s
+# Warmup Iteration   9: 277.607 ops/s
+# Warmup Iteration  10: 277.327 ops/s
+# Warmup Iteration  11: 280.751 ops/s
+# Warmup Iteration  12: 278.533 ops/s
+# Warmup Iteration  13: 276.134 ops/s
+# Warmup Iteration  14: 279.690 ops/s
+# Warmup Iteration  15: 275.868 ops/s
+# Warmup Iteration  16: 278.165 ops/s
+# Warmup Iteration  17: 277.818 ops/s
+# Warmup Iteration  18: 279.252 ops/s
+# Warmup Iteration  19: 277.909 ops/s
+# Warmup Iteration  20: 278.586 ops/s
+Iteration   1: 280.370 ops/s
+Iteration   2: 278.151 ops/s
+Iteration   3: 267.800 ops/s
+Iteration   4: 216.070 ops/s
+Iteration   5: 213.093 ops/s
+Iteration   6: 213.224 ops/s
+Iteration   7: 239.650 ops/s
+Iteration   8: 211.636 ops/s
+Iteration   9: 213.727 ops/s
+Iteration  10: 223.613 ops/s
+
+
+Result "jvmscompare.benchmark.IntListTransform.transform_EC_Primitive_Eager_Serial":
+  230.373 ±(99.9%) 25.026 ops/s [Average]
+  (min, avg, max) = (203.668, 230.373, 297.224), stdev = 28.820
+  CI (99.9%): [205.347, 255.399] (assumes normal distribution)
+
+
+# JMH version: 1.23
+# VM version: JDK 11.0.6, anonymous, 11.0.6+1-LTS-jvmci-19.3-b07
+# *** WARNING: This VM is not supported by JMH. The produced benchmark data can be completely wrong.
+# VM invoker: /Library/Java/JavaVirtualMachines/graalvm-ee-java11-19.3.1/Contents/Home/bin/java
+# VM options: -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCIProduct -XX:-UnlockExperimentalVMOptions -Xms1024m -Xmx1024m
+# Warmup: 20 iterations, 10 s each
+# Measurement: 10 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: jvmscompare.benchmark.IntListTransform.transform_EC_Primitive_Stream_Parallel
+
+WARNING: Not a HotSpot compiler command compatible VM ("anonymous-11.0.6"), compilerHints are disabled.
+# Run progress: 50.00% complete, ETA 00:30:10
+# Fork: 1 of 2
+# Warmup Iteration   1: 1359.819 ops/s
+# Warmup Iteration   2: 1419.036 ops/s
+# Warmup Iteration   3: 1306.629 ops/s
+# Warmup Iteration   4: 1300.640 ops/s
+# Warmup Iteration   5: 1299.739 ops/s
+# Warmup Iteration   6: 1302.417 ops/s
+# Warmup Iteration   7: 1305.942 ops/s
+# Warmup Iteration   8: 1304.621 ops/s
+# Warmup Iteration   9: 1311.609 ops/s
+# Warmup Iteration  10: 1301.035 ops/s
+# Warmup Iteration  11: 1305.218 ops/s
+# Warmup Iteration  12: 1313.241 ops/s
+# Warmup Iteration  13: 1313.845 ops/s
+# Warmup Iteration  14: 1309.907 ops/s
+# Warmup Iteration  15: 1308.618 ops/s
+# Warmup Iteration  16: 1309.572 ops/s
+# Warmup Iteration  17: 1305.381 ops/s
+# Warmup Iteration  18: 1306.406 ops/s
+# Warmup Iteration  19: 1307.760 ops/s
+# Warmup Iteration  20: 1308.988 ops/s
+Iteration   1: 1307.473 ops/s
+Iteration   2: 1310.550 ops/s
+Iteration   3: 1305.793 ops/s
+Iteration   4: 1307.648 ops/s
+Iteration   5: 1310.486 ops/s
+Iteration   6: 1306.874 ops/s
+Iteration   7: 1307.720 ops/s
+Iteration   8: 1306.015 ops/s
+Iteration   9: 1305.384 ops/s
+Iteration  10: 1311.206 ops/s
+
+WARNING: Not a HotSpot compiler command compatible VM ("anonymous-11.0.6"), compilerHints are disabled.
+# Run progress: 58.33% complete, ETA 00:25:08
+# Fork: 2 of 2
+# Warmup Iteration   1: 1483.183 ops/s
+# Warmup Iteration   2: 1298.191 ops/s
+# Warmup Iteration   3: 1301.558 ops/s
+# Warmup Iteration   4: 1300.218 ops/s
+# Warmup Iteration   5: 1301.930 ops/s
+# Warmup Iteration   6: 1305.038 ops/s
+# Warmup Iteration   7: 1306.421 ops/s
+# Warmup Iteration   8: 1305.559 ops/s
+# Warmup Iteration   9: 1314.395 ops/s
+# Warmup Iteration  10: 1308.081 ops/s
+# Warmup Iteration  11: 1317.434 ops/s
+# Warmup Iteration  12: 1312.440 ops/s
+# Warmup Iteration  13: 1307.957 ops/s
+# Warmup Iteration  14: 1308.251 ops/s
+# Warmup Iteration  15: 1311.879 ops/s
+# Warmup Iteration  16: 1310.956 ops/s
+# Warmup Iteration  17: 1306.090 ops/s
+# Warmup Iteration  18: 1301.137 ops/s
+# Warmup Iteration  19: 1309.368 ops/s
+# Warmup Iteration  20: 1306.664 ops/s
+Iteration   1: 1312.054 ops/s
+Iteration   2: 1308.631 ops/s
+Iteration   3: 1306.013 ops/s
+Iteration   4: 1306.708 ops/s
+Iteration   5: 1305.796 ops/s
+Iteration   6: 1306.406 ops/s
+Iteration   7: 1308.906 ops/s
+Iteration   8: 1310.242 ops/s
+Iteration   9: 1309.242 ops/s
+Iteration  10: 1307.237 ops/s
+
+
+Result "jvmscompare.benchmark.IntListTransform.transform_EC_Primitive_Stream_Parallel":
+  1308.019 ±(99.9%) 1.761 ops/s [Average]
+  (min, avg, max) = (1305.384, 1308.019, 1312.054), stdev = 2.028
+  CI (99.9%): [1306.258, 1309.780] (assumes normal distribution)
+
+
+# JMH version: 1.23
+# VM version: JDK 11.0.6, anonymous, 11.0.6+1-LTS-jvmci-19.3-b07
+# *** WARNING: This VM is not supported by JMH. The produced benchmark data can be completely wrong.
+# VM invoker: /Library/Java/JavaVirtualMachines/graalvm-ee-java11-19.3.1/Contents/Home/bin/java
+# VM options: -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCIProduct -XX:-UnlockExperimentalVMOptions -Xms1024m -Xmx1024m
+# Warmup: 20 iterations, 10 s each
+# Measurement: 10 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: jvmscompare.benchmark.IntListTransform.transform_JDK_Boxed_Stream_Parallel
+
+WARNING: Not a HotSpot compiler command compatible VM ("anonymous-11.0.6"), compilerHints are disabled.
+# Run progress: 66.67% complete, ETA 00:20:06
+# Fork: 1 of 2
+# Warmup Iteration   1: 29.996 ops/s
+# Warmup Iteration   2: 31.024 ops/s
+# Warmup Iteration   3: 30.845 ops/s
+# Warmup Iteration   4: 30.662 ops/s
+# Warmup Iteration   5: 31.236 ops/s
+# Warmup Iteration   6: 30.098 ops/s
+# Warmup Iteration   7: 30.124 ops/s
+# Warmup Iteration   8: 30.228 ops/s
+# Warmup Iteration   9: 30.870 ops/s
+# Warmup Iteration  10: 31.259 ops/s
+# Warmup Iteration  11: 30.780 ops/s
+# Warmup Iteration  12: 30.082 ops/s
+# Warmup Iteration  13: 30.268 ops/s
+# Warmup Iteration  14: 31.997 ops/s
+# Warmup Iteration  15: 31.084 ops/s
+# Warmup Iteration  16: 31.158 ops/s
+# Warmup Iteration  17: 30.804 ops/s
+# Warmup Iteration  18: 30.775 ops/s
+# Warmup Iteration  19: 30.911 ops/s
+# Warmup Iteration  20: 30.317 ops/s
+Iteration   1: 30.466 ops/s
+Iteration   2: 30.890 ops/s
+Iteration   3: 30.980 ops/s
+Iteration   4: 30.560 ops/s
+Iteration   5: 30.576 ops/s
+Iteration   6: 31.017 ops/s
+Iteration   7: 30.791 ops/s
+Iteration   8: 30.876 ops/s
+Iteration   9: 30.907 ops/s
+Iteration  10: 30.707 ops/s
+
+WARNING: Not a HotSpot compiler command compatible VM ("anonymous-11.0.6"), compilerHints are disabled.
+# Run progress: 75.00% complete, ETA 00:15:05
+# Fork: 2 of 2
+# Warmup Iteration   1: 32.873 ops/s
+# Warmup Iteration   2: 35.408 ops/s
+# Warmup Iteration   3: 35.492 ops/s
+# Warmup Iteration   4: 35.027 ops/s
+# Warmup Iteration   5: 34.929 ops/s
+# Warmup Iteration   6: 35.764 ops/s
+# Warmup Iteration   7: 34.666 ops/s
+# Warmup Iteration   8: 35.091 ops/s
+# Warmup Iteration   9: 35.323 ops/s
+# Warmup Iteration  10: 34.837 ops/s
+# Warmup Iteration  11: 34.312 ops/s
+# Warmup Iteration  12: 35.066 ops/s
+# Warmup Iteration  13: 35.020 ops/s
+# Warmup Iteration  14: 34.775 ops/s
+# Warmup Iteration  15: 35.526 ops/s
+# Warmup Iteration  16: 35.067 ops/s
+# Warmup Iteration  17: 34.733 ops/s
+# Warmup Iteration  18: 35.359 ops/s
+# Warmup Iteration  19: 34.765 ops/s
+# Warmup Iteration  20: 35.120 ops/s
+Iteration   1: 34.931 ops/s
+Iteration   2: 35.137 ops/s
+Iteration   3: 34.878 ops/s
+Iteration   4: 34.640 ops/s
+Iteration   5: 35.274 ops/s
+Iteration   6: 35.080 ops/s
+Iteration   7: 35.147 ops/s
+Iteration   8: 35.321 ops/s
+Iteration   9: 35.401 ops/s
+Iteration  10: 34.915 ops/s
+
+
+Result "jvmscompare.benchmark.IntListTransform.transform_JDK_Boxed_Stream_Parallel":
+  32.925 ±(99.9%) 1.922 ops/s [Average]
+  (min, avg, max) = (30.466, 32.925, 35.401), stdev = 2.213
+  CI (99.9%): [31.003, 34.847] (assumes normal distribution)
+
+
+# JMH version: 1.23
+# VM version: JDK 11.0.6, anonymous, 11.0.6+1-LTS-jvmci-19.3-b07
+# *** WARNING: This VM is not supported by JMH. The produced benchmark data can be completely wrong.
+# VM invoker: /Library/Java/JavaVirtualMachines/graalvm-ee-java11-19.3.1/Contents/Home/bin/java
+# VM options: -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCIProduct -XX:-UnlockExperimentalVMOptions -Xms1024m -Xmx1024m
+# Warmup: 20 iterations, 10 s each
+# Measurement: 10 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: jvmscompare.benchmark.IntListTransform.transform_JDK_Boxed_Stream_Serial
+
+WARNING: Not a HotSpot compiler command compatible VM ("anonymous-11.0.6"), compilerHints are disabled.
+# Run progress: 83.33% complete, ETA 00:10:03
+# Fork: 1 of 2
+# Warmup Iteration   1: 28.354 ops/s
+# Warmup Iteration   2: 25.773 ops/s
+# Warmup Iteration   3: 25.563 ops/s
+# Warmup Iteration   4: 26.775 ops/s
+# Warmup Iteration   5: 25.583 ops/s
+# Warmup Iteration   6: 26.126 ops/s
+# Warmup Iteration   7: 25.846 ops/s
+# Warmup Iteration   8: 25.545 ops/s
+# Warmup Iteration   9: 25.723 ops/s
+# Warmup Iteration  10: 25.533 ops/s
+# Warmup Iteration  11: 26.483 ops/s
+# Warmup Iteration  12: 25.674 ops/s
+# Warmup Iteration  13: 25.572 ops/s
+# Warmup Iteration  14: 25.750 ops/s
+# Warmup Iteration  15: 26.086 ops/s
+# Warmup Iteration  16: 25.556 ops/s
+# Warmup Iteration  17: 25.723 ops/s
+# Warmup Iteration  18: 26.377 ops/s
+# Warmup Iteration  19: 25.587 ops/s
+# Warmup Iteration  20: 25.628 ops/s
+Iteration   1: 26.847 ops/s
+Iteration   2: 28.070 ops/s
+Iteration   3: 26.088 ops/s
+Iteration   4: 18.983 ops/s
+Iteration   5: 18.692 ops/s
+Iteration   6: 18.786 ops/s
+Iteration   7: 17.194 ops/s
+Iteration   8: 18.473 ops/s
+Iteration   9: 18.756 ops/s
+Iteration  10: 19.094 ops/s
+
+WARNING: Not a HotSpot compiler command compatible VM ("anonymous-11.0.6"), compilerHints are disabled.
+# Run progress: 91.67% complete, ETA 00:05:01
+# Fork: 2 of 2
+# Warmup Iteration   1: 21.280 ops/s
+# Warmup Iteration   2: 19.087 ops/s
+# Warmup Iteration   3: 16.515 ops/s
+# Warmup Iteration   4: 17.566 ops/s
+# Warmup Iteration   5: 17.043 ops/s
+# Warmup Iteration   6: 16.765 ops/s
+# Warmup Iteration   7: 16.930 ops/s
+# Warmup Iteration   8: 17.157 ops/s
+# Warmup Iteration   9: 16.562 ops/s
+# Warmup Iteration  10: 17.526 ops/s
+# Warmup Iteration  11: 18.053 ops/s
+# Warmup Iteration  12: 16.660 ops/s
+# Warmup Iteration  13: 17.586 ops/s
+# Warmup Iteration  14: 18.447 ops/s
+# Warmup Iteration  15: 17.163 ops/s
+# Warmup Iteration  16: 16.495 ops/s
+# Warmup Iteration  17: 19.680 ops/s
+# Warmup Iteration  18: 17.263 ops/s
+# Warmup Iteration  19: 18.079 ops/s
+# Warmup Iteration  20: 16.521 ops/s
+Iteration   1: 18.073 ops/s
+Iteration   2: 16.955 ops/s
+Iteration   3: 18.645 ops/s
+Iteration   4: 17.885 ops/s
+Iteration   5: 17.877 ops/s
+Iteration   6: 19.827 ops/s
+Iteration   7: 16.547 ops/s
+Iteration   8: 17.685 ops/s
+Iteration   9: 18.670 ops/s
+Iteration  10: 17.307 ops/s
+
+
+Result "jvmscompare.benchmark.IntListTransform.transform_JDK_Boxed_Stream_Serial":
+  19.523 ±(99.9%) 2.897 ops/s [Average]
+  (min, avg, max) = (16.547, 19.523, 28.070), stdev = 3.336
+  CI (99.9%): [16.626, 22.420] (assumes normal distribution)
+
+
+# Run complete. Total time: 01:00:23
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+Benchmark                                                 Mode  Cnt     Score    Error  Units
+IntListTransform.transform_EC_Boxed_Eager_Serial         thrpt   20    38.174 ±  0.436  ops/s
+IntListTransform.transform_EC_Boxed_Lazy_Parallel        thrpt   20    89.437 ±  2.193  ops/s
+IntListTransform.transform_EC_Primitive_Eager_Serial     thrpt   20   230.373 ± 25.026  ops/s
+IntListTransform.transform_EC_Primitive_Stream_Parallel  thrpt   20  1308.019 ±  1.761  ops/s
+IntListTransform.transform_JDK_Boxed_Stream_Parallel     thrpt   20    32.925 ±  1.922  ops/s
+IntListTransform.transform_JDK_Boxed_Stream_Serial       thrpt   20    19.523 ±  2.897  ops/s
+
+Benchmark result is saved to benchmark-results/int-list-transform/02_GraalEEIntListTransform.csv
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  01:00 h
+[INFO] Finished at: 2020-02-06T05:31:19-05:00
+[INFO] ------------------------------------------------------------------------
